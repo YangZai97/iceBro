@@ -1,32 +1,31 @@
 <template>
 	<view class="bg">
-		<view class="t1">
-			<uni-icons type="contact" size="70" class="icon1" style="color: #00CCFF;"></uni-icons>
-			<text style="display: block;margin-left: 135px;">Jennry</text>
-		</view>
-		<view class="t2">
-			<view class="t2-l">
-				<uni-icons type="bars" size="30" class="icon" style="color: #00CCFF;"></uni-icons><text class="fs">滞留订单</text>
-				<uni-icons type="forward" size="20"></uni-icons>
-			</view>
-			<view class="t2-r">
-				<uni-icons type="personadd" size="30" class="icon" style="color: #00CCFF;"></uni-icons><text class="fl">我的客户</text>
+		<view class="t2" style="text-align: center;">
+			<image src="../../static/haihuidai/input.png" style="width: 80px; height: 80px;"></image>
+			<view >
+				<text >{{username}}</text>
 			</view>
 		</view>
 		<view class="t2">
-			<view class="t2-l">
-				<uni-icons type="phone" size="30" class="icon" style="color: #00CCFF;"></uni-icons><text class="fs">手机号</text>
+			<view class="D-flex line ">
+				<uni-icons type="bars" size="30" class="icons"  style="color: #6a7fff;"></uni-icons><text class="fl">滞留订单</text>
 			</view>
-			<view class="flex">
-				<view >
-					<uni-icons type="paperplane" size="30" class="icon" style="color: #00CCFF;"></uni-icons>
-				</view>
-				<view >
-					<text class="fl">昵称</text><input class="uni-input" v-model="username" />
-				</view>
+			<view class="D-flex">
+				<uni-icons type="personadd" size="30"  class="icons" style="color: #6a7fff;"></uni-icons><text class="fl">我的客户</text>
 			</view>
 		</view>
-		<view><text>退出登录</text></view>
+		<view class="t2">
+			<view class="D-flex line">
+				<uni-icons type="phone" size="30" class="icons" style="color: #6a7fff;"></uni-icons>
+				<text class="fl">手机号</text>
+				<input class="uni-input" v-model="phone" />
+			</view>
+			<view class="D-flex">
+				<uni-icons type="paperplane" size="30" class="icons" style="color: #6a7fff;"></uni-icons>
+				<text class="fl">昵称</text><input class="uni-input" v-model="username" />
+			</view>
+		</view>
+		<view class="btn"><button class="logout" type="primary" >退出登录</button></view>
 	</view>
 </template>
 
@@ -35,7 +34,9 @@
 	export default {
 		data() {
 			return {
-				username:'jjj'
+				username: 'Jennry',
+				phone:'13699999999'
+				
 			}
 		},
 		methods: {
@@ -48,61 +49,42 @@
 </script>
 
 <style scoped>
-	.flex{
-		display: flex;
+	.btn{
+		width: 90%;
+		margin: 0 auto;
 	}
+	.D-flex {
+		padding: 10px;
+		display: flex;
+		align-items: center;
+	}
+	.line {
+		border-bottom: 1px solid #eef5ff;
+		
+	}
+
 	.bg {
 		background-image: linear-gradient(#55aaff, #FFFFFF);
-		/* height: 100rpx; */
+		padding: 20px 0;
 	}
 
-	.t1 {
-		/* border: 1px solid #CCCCCC; */
-		margin: 10px;
-		border-radius: 25px;
-		box-shadow: 1px 1px 1px #FFFFFF;
-		background-color: #FFFFFF;
-		height: 150px;
-	}
 
 	.t2 {
+		border-radius: 10px;
 		box-shadow: 1px 1px 1px #FFFFFF;
 		background-color: #FFFFFF;
 		margin: 10px;
-		padding: 10px;
+		padding: 15px;
 	}
 
-	.t2-l {
-		/* height:50px; */
-		padding: 10px;
-		display: inline-block;
-	}
-
-	.t2-r {
-		/* height:50px; */
-		padding: 10px;
-		display: inline-block;
-	}
-
-	.fs {
-		font-size: 20px;
-		padding-bottom: 13px;
-		padding-right: 170px;
-		border-bottom: 1px solid #ededed;
-	}
-
+	
 	.fl {
 		font-size: 20px;
-		padding-right: 70px;
+		margin-right: 20px;
 	}
 
-	.icon1 {
-		padding-left: 135px;
+	.icons {
+		padding: 0px 10px 0px 0px;
 		top: 10px;
-	}
-
-	.icon {
-		margin: 10px 10px 10px 0px;
-		vertical-align: middle;
 	}
 </style>
