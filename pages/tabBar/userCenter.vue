@@ -62,7 +62,6 @@
 		border-bottom: 1px solid #eef5ff;
 		
 	}
-
 	.bg {
 		background-image: linear-gradient(#55aaff, #FFFFFF);
 		padding: 20px 0;

@@ -11,11 +11,24 @@
 		},
 		{
 			"path": "pages/tabBar/bill",
-			"style" : {"navigationBarTitleText": "资金流水"}
+			"style" : {
+			"h5": {
+				"titleNView": false
+			}}
+		},
+		{
+			"path": "pages/order/orderDetalis/orderDetalis",
+			"style" : {"navigationBarTitleText": "订单详情"}
+			
 		},
 		{
 			"path": "pages/tabBar/userCenter",
-			"style" : {"navigationBarTitleText": "用户中心"}
+			"style": {
+				"h5": {
+					"titleNView": false
+				}
+			}
+			
 			
 		},
 		{

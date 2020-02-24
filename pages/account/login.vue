@@ -56,8 +56,8 @@
 </script>
 
 <style scoped>
-	.content{
-		background: url(../../static/haihuidai/logo.png) no-repeat;
+	page{
+		background: url(../../static/haihuidai/logo.png) no-repeat top;
 	}
 	.login-text{
 		padding-top: 20rpx;
