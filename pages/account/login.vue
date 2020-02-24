@@ -2,24 +2,24 @@
 	<view class="login">
 		<!-- <cover-image src="/static/haihuidai/bg.png"></cover-image> -->
 		<view class="content">
-			<view class="logo">
-				<image src="/static/haihuidai/logo.png" mode="widthFix"></image>
-			</view>
 			<view class="login-form">
+				<view class="login-text">
+					登录
+				</view>
 				<view class="item phone">
-					<image class="icon left" src="/static/haihuidai/icon_phone.png" mode="widthFix"></image>
+					<image class="icon left" src="/static/haihuidai/input.png" mode="widthFix"></image>
 					<input class="uni-input" v-model="username" focus placeholder="用户名" placeholder-class="input-placeholder"/>
-					<image class="icon right" @click="removeInput('username')" src="/static/haihuidai/icon_phone_right.png" mode="widthFix"></image>
+					<image class="icon right" @click="removeInput('username')" src="/static/haihuidai/delete_input.png" mode="widthFix"></image>
 				</view>
 				<view class="item password">
-					<image class="icon left" src="/static/haihuidai/icon_pwd.png" mode="widthFix"></image>
+					<image class="icon left" src="/static/haihuidai/password.png" mode="widthFix"></image>
 					<input class="uni-input" v-model="password" placeholder="密码" placeholder-class="input-placeholder"/>
-					<image class="icon right"  @click="removeInput('password')" src="/static/haihuidai/icon_phone_right.png" mode="widthFix"></image>
+					<image class="icon right"  @click="removeInput('password')" src="/static/haihuidai/delete_input.png" mode="widthFix"></image>
 				</view>
 				<view class="btn">
 					<text @click="login">登录</text>
 				</view>
-				<view class="forgot-pwd"><text>忘记密码？</text></view>
+				<view style="text-align: center;padding-bottom: 15rpx;"><text  style="font-size: 10rpx;color: #6ea0f8;font-weight: 400;">无账号用户请联系客服（QQ33215006）</text></view>
 			</view>
 			
 		</view>
@@ -56,10 +56,24 @@
 </script>
 
 <style scoped>
+	.content{
+		background: url(../../static/haihuidai/logo.png) no-repeat;
+	}
+	.login-text{
+		padding-top: 20rpx;
+		text-align: center;
+		font-weight: 400;
+		margin-top: 500rpx;
+		margin-bottom: 40rpx;
+	}
 	.content {position: absolute; top: 0;width: 100%;}
 	.logo {text-align: center; margin: 96rpx auto 73rpx auto;}
 	.logo image {width: 50%;}
-	.login-form {width: 630rpx; margin: auto;}
+	.login-form {width: 630rpx; margin: auto; background-color: #FFFFFF; padding:0 20rpx 0rpx 20rpx ;  box-shadow: 10px 10px 20px 10px #C8C8CD, -10px 10px 10px 10px rgba(255,255,255,0.5);border-radius: 20rpx; 
+}	
+	.login-form .item:nth-child(1){
+		margin-top: 500rpx;
+	}
 	.login-form .item {
 		width: 630rpx;
 		height: 84rpx;
@@ -68,11 +82,11 @@
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		background-color: #4781e2;
+		background-color: #FFFFFF;
 	}
-	.login-form input {color: #fff; height: 84rpx; line-height: 84rpx;}
+	.login-form input { height: 84rpx; line-height: 84rpx;}
 	.login-form .item .icon{width: 36rpx; height: 40rpx;}
-	.input-placeholder {color: #fff; line-height: 84rpx; height: 84rpx; margin: auto;}
+	.input-placeholder { line-height: 84rpx; height: 84rpx; margin: auto;}
 	.login-form .btn{ margin: 43rpx auto 22rpx auto;
 		text-align: center;
 		height: 84rpx;

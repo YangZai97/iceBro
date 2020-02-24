@@ -25,7 +25,7 @@
 		},
 		{
 			"path": "pages/tabBar/customer",
-			"style" : {"navigationBarTitleText": "客户"}
+			"style" : {"navigationBarTitleText": "请选择派送单的客户"}
 			
 		}
 	],
@@ -43,27 +43,27 @@
 		"backgroundColor": "#FFFFFF",
 		"list": [{
 				"pagePath": "pages/tabBar/customer",
-				"text": "客户",
-				"iconPath": "static/tabBaricons/kehu_selete.jpg",
-				"selectedIconPath": "static/tabBaricons/kehu.jpg"
+				"text": "录单",
+				"iconPath": "static/tabBaricons/ludan2.png",
+				"selectedIconPath": "static/tabBaricons/ludan.png"
 			},
 			{
 				"pagePath": "pages/tabBar/orderHistory",
 				"text": "订单",
-				"iconPath": "static/tabBaricons/order_selete.jpg",
-				"selectedIconPath": "static/tabBaricons/order.jpg"
+				"iconPath": "static/tabBaricons/order2.png",
+				"selectedIconPath": "static/tabBaricons/order.png"
 			},
 			{
 				"pagePath": "pages/tabBar/bill",
 				"text": "资金流水",
-				"iconPath": "static/tabBaricons/bill.jpg",
-				"selectedIconPath": "static/tabBaricons/bill_selete.jpg"
+				"iconPath": "static/tabBaricons/bill2.png",
+				"selectedIconPath": "static/tabBaricons/bill.png"
 			},
 			{
 				"pagePath": "pages/tabBar/userCenter",
 				"text": "我的",
-				"iconPath": "static/tabBaricons/center_selete.jpg",
-				"selectedIconPath": "static/tabBaricons/user.jpg"
+				"iconPath": "static/tabBaricons/user2.png",
+				"selectedIconPath": "static/tabBaricons/user.png"
 			}
 		]
 	}
