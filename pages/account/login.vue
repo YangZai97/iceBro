@@ -20,8 +20,7 @@
 					<text @click="login">登录</text>
 				</view>
 				<view style="text-align: center;padding-bottom: 15rpx;"><text  style="font-size: 10rpx;color: #6ea0f8;font-weight: 400;">无账号用户请联系客服（QQ33215006）</text></view>
-			</view>
-			
+			</view>	
 		</view>
 	</view>
 </template>
@@ -69,8 +68,7 @@
 	.content {position: absolute; top: 0;width: 100%;}
 	.logo {text-align: center; margin: 96rpx auto 73rpx auto;}
 	.logo image {width: 50%;}
-	.login-form {width: 630rpx; margin: auto; background-color: #FFFFFF; padding:0 20rpx 0rpx 20rpx ;  box-shadow: 10px 10px 20px 10px #C8C8CD, -10px 10px 10px 10px rgba(255,255,255,0.5);border-radius: 20rpx; 
-}	
+	.login-form {width: 630rpx; margin: auto; background-color: #FFFFFF; padding:0 20rpx 0rpx 20rpx ;  box-shadow: 10px 10px 20px 10px #C8C8CD, -10px 10px 10px 10px rgba(255,255,255,0.5);border-radius: 20rpx;}	
 	.login-form .item:nth-child(1){
 		margin-top: 500rpx;
 	}

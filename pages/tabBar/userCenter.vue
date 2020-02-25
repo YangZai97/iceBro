@@ -2,8 +2,8 @@
 	<view class="bg">
 		<view class="t2" style="text-align: center;">
 			<image src="../../static/haihuidai/input.png" style="width: 80px; height: 80px;"></image>
-			<view >
-				<text >{{username}}</text>
+			<view>
+				<text>{{username}}</text>
 			</view>
 		</view>
 		<view class="t2">
