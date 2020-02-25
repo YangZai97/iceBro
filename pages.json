@@ -58,6 +58,12 @@
 				"navigationBarTitleText": "录入订单信息"
 				
 			}
+        } 
+        ,{
+            "path" : "pages/order/retention/retention",
+           "style" : {
+           	"navigationBarTitleText": "滞留订单"
+           }
         }
     ],
 	"globalStyle": {

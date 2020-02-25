@@ -1,31 +1,31 @@
 <template>
 	<view class="bg">
 		<view class="t2" style="text-align: center;">
-			<image src="../../static/haihuidai/input.png" style="width: 80px; height: 80px;"></image>
+			<image src="../../static/haihuidai/asset.png" style="width: 80px; height: 80px;"></image>
 			<view>
-				<text>{{phone}}</text>
+				<text style="color: #FA963C;font-size: 16px; font-weight: 400;">{{phone}}</text>
 			</view>
 		</view>
 		<view class="t2">
-			<view class="D-flex line ">
-				<uni-icons type="bars" size="30" class="icons" style="color: #6a7fff;"></uni-icons><text class="fl">滞留订单</text>
+			<view class="D-flex line " @click="goRetention">
+				<uni-icons type="bars" size="22" class="icons" style="color: #483eff;"></uni-icons><text class="fl">滞留订单</text>
 			</view>
 			<view class="D-flex" @click="go">
-				<uni-icons type="personadd" size="30" class="icons" style="color: #6a7fff;"></uni-icons><text class="fl">我的客户</text>
+				<uni-icons type="personadd" size="22" class="icons" style="color: #483eff;"></uni-icons><text class="fl">我的客户</text>
 			</view>
 		</view>
 		<view class="t2">
 			<view class="D-flex line">
-				<uni-icons type="phone" size="30" class="icons" style="color: #6a7fff;"></uni-icons>
+				<uni-icons type="phone" size="22" class="icons" style="color: #483eff;"></uni-icons>
 				<text class="fl">手机号 </text>
-				<view>
+				<view class="fl">
 					{{phone}}
 				</view>
 			</view>
 			<view class="D-flex">
-				<uni-icons type="paperplane" size="30" class="icons" style="color: #6a7fff;"></uni-icons>
+				<uni-icons type="paperplane" size="22" class="icons" style="color: #483eff;"></uni-icons>
 				<text class="fl">车牌号 </text>
-				<view>
+				<view class="fl">
 					{{card}}
 				</view>
 			</view>
@@ -48,6 +48,11 @@
 			go() {
 				uni.switchTab({
 					url: '/pages/tabBar/customer',
+				})
+			},
+			goRetention(){
+				uni.navigateTo({
+					url:'../order/retention/retention'
 				})
 			},
 			logout() {
@@ -97,6 +102,9 @@
 	.fl {
 		font-size: 20px;
 		margin-right: 20px;
+		color: #333333;
+		font-size: 16px;
+		font-weight: 400;
 	}
 
 	.icons {

@@ -8,10 +8,7 @@
 				<text class="font-color-gray">车牌号:229868878</text>
 			</view>
 			<view class="order-details-footer" style="margin-top: 5px;">
-
 				<uni-icons class="order-icons" type="checkbox" size="22"></uni-icons>
-
-
 				<text class="font-color">东边库存</text>
 
 			</view>
