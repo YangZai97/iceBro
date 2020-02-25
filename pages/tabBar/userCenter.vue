@@ -2,35 +2,35 @@
 	<view class="bg">
 		<view class="t2" style="text-align: center;">
 			<image src="../../static/haihuidai/input.png" style="width: 80px; height: 80px;"></image>
-			<view >
-				<text >{{phone}}</text>
+			<view>
+				<text>{{phone}}</text>
 			</view>
 		</view>
 		<view class="t2">
 			<view class="D-flex line ">
-				<uni-icons type="bars" size="30" class="icons"  style="color: #6a7fff;"></uni-icons><text class="fl">滞留订单</text>
+				<uni-icons type="bars" size="30" class="icons" style="color: #6a7fff;"></uni-icons><text class="fl">滞留订单</text>
 			</view>
 			<view class="D-flex" @click="go">
-				<uni-icons type="personadd" size="30"  class="icons" style="color: #6a7fff;"></uni-icons><text class="fl">我的客户</text>
+				<uni-icons type="personadd" size="30" class="icons" style="color: #6a7fff;"></uni-icons><text class="fl">我的客户</text>
 			</view>
 		</view>
 		<view class="t2">
 			<view class="D-flex line">
 				<uni-icons type="phone" size="30" class="icons" style="color: #6a7fff;"></uni-icons>
 				<text class="fl">手机号 </text>
-				<view >
+				<view>
 					{{phone}}
 				</view>
 			</view>
 			<view class="D-flex">
 				<uni-icons type="paperplane" size="30" class="icons" style="color: #6a7fff;"></uni-icons>
 				<text class="fl">车牌号 </text>
-				<view >
+				<view>
 					{{card}}
 				</view>
 			</view>
 		</view>
-		<view class="btn"><button class="logout" type="primary"  @click="logout">退出登录</button></view>
+		<view class="btn"><button class="logout" type="primary" @click="logout">退出登录</button></view>
 	</view>
 	</view>
 </template>
@@ -41,21 +41,20 @@
 		data() {
 			return {
 				card: '喻A366D4',
-				phone:'13699999999'
-				
+				phone: '13699999999',
 			}
 		},
 		methods: {
-			go(){
+			go() {
 				uni.switchTab({
-					url:'/pages/tabBar/customer',
+					url: '/pages/tabBar/customer',
 				})
 			},
-			logout(){
+			logout() {
 				uni.navigateTo({
-					url:'../account/login'
+					url: '../account/login'
 				})
-			}
+			},
 		},
 		components: {
 			uniIcons
@@ -64,19 +63,22 @@
 </script>
 
 <style scoped>
-	.btn{
+	.btn {
 		width: 90%;
 		margin: 0 auto;
 	}
+
 	.D-flex {
 		padding: 10px;
 		display: flex;
 		align-items: center;
 	}
+
 	.line {
 		border-bottom: 1px solid #eef5ff;
-		
+
 	}
+
 	.bg {
 		background-image: linear-gradient(#55aaff, #FFFFFF);
 		padding: 20px 0;
@@ -91,7 +93,7 @@
 		padding: 15px;
 	}
 
-	
+
 	.fl {
 		font-size: 20px;
 		margin-right: 20px;
