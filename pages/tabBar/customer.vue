@@ -4,8 +4,8 @@
 			<uni-search-bar placeholder="输入姓名/手机号/店名" @input="search" v-model="searchValue"></uni-search-bar>
 		</view>
 
-		<view class="lists" v-for="(item,index) in list" :key='index'>
-			<view class="list">
+		<view class="lists" >
+			<view class="list" v-for="(item,index) in list" :key='index'>
 				<view class="list-top">
 					<view>
 						<uni-icons type="person-filled" size="18" style="color: #5D61FC;" class="ma-right"></uni-icons>
@@ -39,8 +39,6 @@
 				</view>
 			</view>
 			
-		</view>
-		<view style="margin-top: 100px;">
 		</view>
 		<view class="footer-button">
 			<view >
@@ -168,7 +166,11 @@
 	.list {
 		background-color: #FFFFFF;
 		padding: 10px 10px 4px 10px;
+		margin-top:10px;
 		border-radius: 5px;
+	}
+	.list:last-child{
+		margin-bottom:80px;
 	}
 
 	.list view {
@@ -230,7 +232,7 @@
 	}
 	.footer-button{
 		position: fixed;
-		bottom: 52px;
+		bottom: 0px;
 		width: 100%;
 		background-color: #FFFFFF;
 	}

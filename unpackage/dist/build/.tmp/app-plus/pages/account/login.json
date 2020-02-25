@@ -1,0 +1,6 @@
+{
+  "titleView": false,
+  "usingComponents": {
+    "uni-icons": "/components/uni-ui/uni-icons/uni-icons"
+  }
+}

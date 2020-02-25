@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/tabBar/userCenter",
+    "pages/account/login",
+    "pages/order/orderDetalis/orderDetalis",
+    "pages/tabBar/orderHistory",
+    "pages/tabBar/customer",
+    "pages/customer/createCustomer",
+    "pages/customer/eidtCustomer",
+    "pages/customer/recordOrder",
+    "pages/order/retention/retention"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#C3B8B4",
+    "selectedColor": "dodgerblue",
+    "borderStyle": "white",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/tabBar/customer",
+        "text": "录单"
+      },
+      {
+        "pagePath": "pages/tabBar/orderHistory",
+        "text": "派单"
+      },
+      {
+        "pagePath": "pages/tabBar/userCenter",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

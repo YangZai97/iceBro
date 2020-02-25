@@ -1,0 +1,60 @@
+
+page.data-v-6bcdf60c{
+	background: url(../../static/img/logo.db13104a.png) no-repeat top;
+}
+.login-text.data-v-6bcdf60c{
+	padding-top: 20rpx;
+	text-align: center;
+	font-weight: 400;
+	margin-top: 500rpx;
+	margin-bottom: 40rpx;
+}
+.content.data-v-6bcdf60c {position: absolute; top: 0;width: 100%;}
+.logo.data-v-6bcdf60c {text-align: center; margin: 96rpx auto 73rpx auto;}
+.logo image.data-v-6bcdf60c {width: 50%;}
+.login-form.data-v-6bcdf60c {width: 630rpx; margin: auto; background-color: #FFFFFF; padding:0 20rpx 0rpx 20rpx ;  box-shadow: 2px 2px 4px 2px #C8C8CD, -10px 10px 10px 10px rgba(255,255,255,0.5);border-radius: 20rpx;}
+.login-form .item.data-v-6bcdf60c:nth-child(1){
+	margin-top: 500rpx;
+}
+.login-form .item.data-v-6bcdf60c {
+	width: 630rpx;
+	height: 84rpx;
+	border-radius: 6rpx;
+	margin-bottom: 33rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	background-color: #FFFFFF;
+}
+.login-form input.data-v-6bcdf60c { height: 84rpx; line-height: 84rpx;}
+.login-form .item .icon.data-v-6bcdf60c{width: 36rpx; height: 40rpx;}
+.input-placeholder.data-v-6bcdf60c { line-height: 84rpx; height: 84rpx; margin: auto;}
+.login-form .btn.data-v-6bcdf60c{ margin: 43rpx auto 22rpx auto;
+	text-align: center;
+	height: 84rpx;
+	line-height: 84rpx;
+	border-radius: 6rpx;
+	background-color: #6ea0f8;
+}
+.forgot-pwd.data-v-6bcdf60c {text-align: right;}
+.login-third .text.data-v-6bcdf60c{margin: 137rpx auto 106rpx auto; text-align: center;
+}
+.login-third .flex.data-v-6bcdf60c{text-align: center; display: -webkit-box; display: -webkit-flex; display: flex; -webkit-justify-content: space-around; justify-content: space-around;
+}
+.login-third .flex image.data-v-6bcdf60c {width: 88rpx; height: 88rpx;}
+text.data-v-6bcdf60c{
+	height: 30rpx;
+	font-family: PingFang-SC-Regular;
+	font-size: 32rpx;
+	font-weight: bold;
+	font-stretch: normal;
+	line-height: 40rpx;
+	letter-spacing: 3rpx;
+	color: #ffffff;
+}
+

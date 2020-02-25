@@ -1,0 +1,80 @@
+
+page {
+	background-color: #eef2f8;
+}
+.list {
+	background-color: #FFFFFF;
+	padding: 10px 10px 4px 10px;
+	margin-top:10px;
+	border-radius: 5px;
+}
+.list:last-child{
+	margin-bottom:80px;
+}
+.list view {
+	margin-top: 3px;
+}
+.lists {
+	padding: 5px 10px;
+}
+.list-top {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.finish-text {
+	color: #666666;
+	font-size: 16px;
+}
+.ma-right {
+	margin-right: 5px;
+}
+text {
+	font-size: 12px;
+	color: #333333;
+}
+.number-text {
+	color: #5D61FC;
+	font-size: 16px;
+}
+.footer-text {
+	color: #999999;
+}
+.footer {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding: 3px;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	        justify-content: flex-end;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	border-top: 1px solid #eef2f8;
+}
+.footer-right text {
+	color: #666666;
+	font-size: 10px;
+}
+.footer-right {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.footer-right view {
+	margin-right: 10px;
+}
+.footer-button{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+.footer-button button{
+	border-radius: 10px;
+}
+

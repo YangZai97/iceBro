@@ -4,7 +4,7 @@
 			<uni-search-bar placeholder="输入姓名/手机号/店名" @input="search" v-model="searchValue"></uni-search-bar>
 		</view>
 		<section class="Index-Page">
-			<s-tabs :effect="true" v-model="activeTab" @change="change" :nav-per-view="3">
+			<s-tabs :effect="true" v-model="activeTab" @change="change" :nav-per-view="2">
 				<s-tab title="派送中">
 					<view class="lists" v-for="(item,index) in list" :key='index'>
 						<view class="list">
@@ -174,12 +174,12 @@
 			search(e) {
 				console.log(e.value)
 			},
-			send(){
+			send() {
 				this.activeTab = 1
 			},
-			retention(){
+			retention() {
 				uni.navigateTo({
-					url:'../order/retention/retention'
+					url: '../order/retention/retention'
 				})
 			},
 			goDeatalis(id) {
