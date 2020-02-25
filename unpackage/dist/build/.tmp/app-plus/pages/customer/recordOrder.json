@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "录入订单信息",
-  "usingComponents": {
-    "uni-number-box": "/components/uni-number-box/uni-number-box",
-    "uni-icons": "/components/uni-icons/uni-icons"
-  }
-}
