@@ -3,101 +3,100 @@
 		<view>
 			<uni-search-bar placeholder="输入姓名/手机号/店名" @input="search" v-model="searchValue"></uni-search-bar>
 		</view>
-		<section class="Index-Page">
-			<s-tabs :effect="true" v-model="activeTab" @change="change" :nav-per-view="2">
-				<s-tab title="派送中">
-					<view class="lists" v-for="(item,index) in list" :key='index'>
-						<view class="list">
-							<view class="list-top">
-								<view>
-									<text class="number-text">{{item.number}}件</text>
-								</view>
-								<view>
-									<button type="primary" size="mini" @click="send()">确认派送</button>
-								</view>
+		<uni-segmented-control :current="current" :values="items" @clickItem="onClickItem" style-type="button" active-color="#007aff"></uni-segmented-control>
+		<view class="content">
+			<view v-show="current === 0">
+				<view class="lists" v-for="(item,index) in list" :key='index'>
+					<view class="list">
+						<view class="list-top">
+							<view>
+								<text class="number-text">{{item.number}}件</text>
 							</view>
-							<view @click="goDeatalis(item.number)">
-								<view>
-									<uni-icons type="person-filled" size="13" class="ma-right"></uni-icons><text class="ma-right">{{item.username}}</text><text>{{item.phone}}</text>
-								</view>
-								<view>
-									<uni-icons type="home" size="13" class="ma-right"></uni-icons><text>{{item.home}}</text>
-								</view>
-								<view>
-									<uni-icons type="location-filled" size="13" class="ma-right"></uni-icons><text>{{item.addres}}</text>
-								</view>
+							<view>
+								<button type="primary" size="mini" @click="send()">确认派送</button>
 							</view>
-							<view class="footer">
-								<view class="footer-left">
-									<text class="footer-text">订单号: {{item.order}}</text>
+						</view>
+						<view @click="goDeatalis(item.number)">
+							<view>
+								<uni-icons type="person-filled" size="13" class="ma-right"></uni-icons><text class="ma-right">{{item.username}}</text><text>{{item.phone}}</text>
+							</view>
+							<view>
+								<uni-icons type="home" size="13" class="ma-right"></uni-icons><text>{{item.home}}</text>
+							</view>
+							<view>
+								<uni-icons type="location-filled" size="13" class="ma-right"></uni-icons><text>{{item.addres}}</text>
+							</view>
+						</view>
+						<view class="footer">
+							<view class="footer-left">
+								<text class="footer-text">订单号: {{item.order}}</text>
+							</view>
+							<view class="footer-right">
+								<view @click="retention">
+									<uni-icons type="redo" size="11" class="ma-right"></uni-icons><text>滞留</text>
 								</view>
-								<view class="footer-right">
-									<view @click="retention">
-										<uni-icons type="redo" size="11" class="ma-right"></uni-icons><text>滞留</text>
-									</view>
-									<view>
-										<uni-icons type="trash" size="11" class="ma-right"></uni-icons><text>删除</text>
-									</view>
+								<view>
+									<uni-icons type="trash" size="11" class="ma-right"></uni-icons><text>删除</text>
 								</view>
 							</view>
 						</view>
 					</view>
-				</s-tab>
-				<s-tab title="已完成">
-					<view class="lists" v-for="(item,index) in list" :key='index'>
-						<view class="list">
-							<view class="list-top">
-								<view>
-									<text class="number-text">{{item.number}}件</text>
-								</view>
-								<view>
-									<text class="finish-text">已完成</text>
-								</view>
+				</view>
+			</view>
+			<view v-show="current === 1">
+				<view class="lists" v-for="(item,index) in list" :key='index'>
+					<view class="list">
+						<view class="list-top">
+							<view>
+								<text class="number-text">{{item.number}}件</text>
 							</view>
-							<view @click="goDeatalis(item.number)">
-								<view>
-									<uni-icons type="person-filled" size="13" class="ma-right"></uni-icons><text class="ma-right">{{item.username}}</text><text>{{item.phone}}</text>
-								</view>
-								<view>
-									<uni-icons type="home" size="13" class="ma-right"></uni-icons><text>{{item.home}}</text>
-								</view>
-								<view>
-									<uni-icons type="location-filled" size="13" class="ma-right"></uni-icons><text>{{item.addres}}</text>
-								</view>
+							<view>
+								<text class="finish-text">已完成</text>
 							</view>
-							<view class="footer">
-								<view class="footer-left">
-									<text class="footer-text">订单号: {{item.order}}</text>
-								</view>
-								<view class="footer-right">
-									<view>
-										<uni-icons type="trash" size="11" class="ma-right"></uni-icons><text>删除</text>
-									</view>
+						</view>
+						<view @click="goDeatalis(item.number)">
+							<view>
+								<uni-icons type="person-filled" size="13" class="ma-right"></uni-icons><text class="ma-right">{{item.username}}</text><text>{{item.phone}}</text>
+							</view>
+							<view>
+								<uni-icons type="home" size="13" class="ma-right"></uni-icons><text>{{item.home}}</text>
+							</view>
+							<view>
+								<uni-icons type="location-filled" size="13" class="ma-right"></uni-icons><text>{{item.addres}}</text>
+							</view>
+						</view>
+						<view class="footer">
+							<view class="footer-left">
+								<text class="footer-text">订单号: {{item.order}}</text>
+							</view>
+							<view class="footer-right">
+								<view>
+									<uni-icons type="trash" size="11" class="ma-right"></uni-icons><text>删除</text>
 								</view>
 							</view>
 						</view>
 					</view>
-				</s-tab>
-			</s-tabs>
-		</section>
+				</view>
+			</view>
+		</view>
 	</view>
 </template>
 
 <script>
 	import uniIcons from "@/components/uni-icons/uni-icons.vue"
 	import uniSearchBar from '@/components/uni-search-bar/uni-search-bar.vue'
-	import sTabs from '@/components/s-ui/s-tabs';
-	import sTab from '@/components/s-ui/s-tab';
+	import uniSegmentedControl from "@/components/tab-ss/tab-ss.vue"
+
 	export default {
 		components: {
-			sTabs,
-			sTab,
+			uniSegmentedControl,
 			uniSearchBar,
 			uniIcons
 		},
 		data() {
 			return {
-				activeTab: 0,
+				items: ['派送中', '已完成'],
+				current:0,
 				searchValue: '',
 				list: [{
 						number: 7,
@@ -168,8 +167,11 @@
 			}
 		},
 		methods: {
-			change(index) {
+			onClickItem(index) {
 				console.log(index)
+				if (this.current != index.currentIndex) {
+					this.current = index.currentIndex;
+				}
 			},
 			search(e) {
 				console.log(e.value)

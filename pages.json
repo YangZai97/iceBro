@@ -28,10 +28,7 @@
 		{
 			"path": "pages/tabBar/orderHistory",
 			"style": {
-				"navigationStyle": "custom",
-				"app-plus": {
-					"titleView": false
-				}
+				"navigationBarTitleText": "派单记录"
 			}
 
 		},
@@ -65,7 +62,11 @@
 				"navigationBarTitleText": "滞留订单"
 			}
 		}
-	],
+	    ,{
+            "path" : "components/tab-ss/tab-ss",
+            "style" : {}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarBackgroundColor": "#FFFFFF",

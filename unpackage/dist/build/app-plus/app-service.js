@@ -1066,8 +1066,6 @@ function gz$gwx_2(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_2)return __WXML_GLOBAL__.ops_cached.$gwx_2
 __WXML_GLOBAL__.ops_cached.$gwx_2=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-Z([[4],[[5],[[5],[1,'s-tabs _div']],[[7],[3,'customClass']]]])
-Z([[7],[3,'line']])
 })(__WXML_GLOBAL__.ops_cached.$gwx_2);return __WXML_GLOBAL__.ops_cached.$gwx_2
 }
 function gz$gwx_3(){
@@ -1079,12 +1077,6 @@ __WXML_GLOBAL__.ops_cached.$gwx_3=[];
 function gz$gwx_4(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_4)return __WXML_GLOBAL__.ops_cached.$gwx_4
 __WXML_GLOBAL__.ops_cached.$gwx_4=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
-})(__WXML_GLOBAL__.ops_cached.$gwx_4);return __WXML_GLOBAL__.ops_cached.$gwx_4
-}
-function gz$gwx_5(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_5)return __WXML_GLOBAL__.ops_cached.$gwx_5
-__WXML_GLOBAL__.ops_cached.$gwx_5=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'uni-searchbar data-v-e4c997c0'])
 Z([3,'__e'])
@@ -1108,6 +1100,12 @@ Z([3,'24'])
 Z([3,'clear'])
 Z([3,'2'])
 Z([[2,'||'],[[2,'==='],[[7],[3,'cancelButton']],[1,'always']],[[2,'&&'],[[7],[3,'show']],[[2,'==='],[[7],[3,'cancelButton']],[1,'auto']]]])
+})(__WXML_GLOBAL__.ops_cached.$gwx_4);return __WXML_GLOBAL__.ops_cached.$gwx_4
+}
+function gz$gwx_5(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_5)return __WXML_GLOBAL__.ops_cached.$gwx_5
+__WXML_GLOBAL__.ops_cached.$gwx_5=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
 })(__WXML_GLOBAL__.ops_cached.$gwx_5);return __WXML_GLOBAL__.ops_cached.$gwx_5
 }
 function gz$gwx_6(){
@@ -1132,12 +1130,6 @@ function gz$gwx_9(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_9)return __WXML_GLOBAL__.ops_cached.$gwx_9
 __WXML_GLOBAL__.ops_cached.$gwx_9=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-})(__WXML_GLOBAL__.ops_cached.$gwx_9);return __WXML_GLOBAL__.ops_cached.$gwx_9
-}
-function gz$gwx_10(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_10)return __WXML_GLOBAL__.ops_cached.$gwx_10
-__WXML_GLOBAL__.ops_cached.$gwx_10=[];
-(function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'eidt-details data-v-25461ef5'])
 Z([3,'__l'])
 Z([3,'__e'])
@@ -1155,11 +1147,11 @@ Z(z[5])
 Z(z[6])
 Z([[7],[3,'Jvalue']])
 Z([3,'2'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
+})(__WXML_GLOBAL__.ops_cached.$gwx_9);return __WXML_GLOBAL__.ops_cached.$gwx_9
 }
-function gz$gwx_11(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_11)return __WXML_GLOBAL__.ops_cached.$gwx_11
-__WXML_GLOBAL__.ops_cached.$gwx_11=[];
+function gz$gwx_10(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_10)return __WXML_GLOBAL__.ops_cached.$gwx_10
+__WXML_GLOBAL__.ops_cached.$gwx_10=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'order-details'])
 Z([3,'__l'])
@@ -1185,11 +1177,11 @@ Z(z[3])
 Z(z[15])
 Z(z[9])
 Z([3,'4'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_11);return __WXML_GLOBAL__.ops_cached.$gwx_11
+})(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
 }
-function gz$gwx_12(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_12)return __WXML_GLOBAL__.ops_cached.$gwx_12
-__WXML_GLOBAL__.ops_cached.$gwx_12=[];
+function gz$gwx_11(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_11)return __WXML_GLOBAL__.ops_cached.$gwx_11
+__WXML_GLOBAL__.ops_cached.$gwx_11=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'__l'])
 Z([3,'__e'])
@@ -1224,11 +1216,11 @@ Z(z[14])
 Z([3,'11'])
 Z([3,'trash'])
 Z([[2,'+'],[1,'5-'],[[7],[3,'index']]])
-})(__WXML_GLOBAL__.ops_cached.$gwx_12);return __WXML_GLOBAL__.ops_cached.$gwx_12
+})(__WXML_GLOBAL__.ops_cached.$gwx_11);return __WXML_GLOBAL__.ops_cached.$gwx_11
 }
-function gz$gwx_13(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_13)return __WXML_GLOBAL__.ops_cached.$gwx_13
-__WXML_GLOBAL__.ops_cached.$gwx_13=[];
+function gz$gwx_12(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_12)return __WXML_GLOBAL__.ops_cached.$gwx_12
+__WXML_GLOBAL__.ops_cached.$gwx_12=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'__l'])
 Z([3,'__e'])
@@ -1275,11 +1267,11 @@ Z(z[12])
 Z(z[37])
 Z([3,'trash'])
 Z([[2,'+'],[1,'7-'],[[7],[3,'index']]])
-})(__WXML_GLOBAL__.ops_cached.$gwx_13);return __WXML_GLOBAL__.ops_cached.$gwx_13
+})(__WXML_GLOBAL__.ops_cached.$gwx_12);return __WXML_GLOBAL__.ops_cached.$gwx_12
 }
-function gz$gwx_14(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_14)return __WXML_GLOBAL__.ops_cached.$gwx_14
-__WXML_GLOBAL__.ops_cached.$gwx_14=[];
+function gz$gwx_13(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_13)return __WXML_GLOBAL__.ops_cached.$gwx_13
+__WXML_GLOBAL__.ops_cached.$gwx_13=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'__l'])
 Z([3,'__e'])
@@ -1287,23 +1279,19 @@ Z([[4],[[5],[[4],[[5],[[5],[1,'^input']],[[4],[[5],[[5],[[4],[[5],[[5],[1,'__set
 Z([3,'输入姓名/手机号/店名'])
 Z([[7],[3,'searchValue']])
 Z([3,'1'])
+Z([3,'#007aff'])
 Z(z[0])
 Z(z[1])
-Z(z[1])
-Z([[4],[[5],[[5],[[4],[[5],[[5],[1,'^change']],[[4],[[5],[[4],[[5],[1,'change']]]]]]]],[[4],[[5],[[5],[1,'^input']],[[4],[[5],[[4],[[5],[[5],[1,'__set_model']],[[4],[[5],[[5],[[5],[[5],[1,'']],[1,'activeTab']],[1,'$event']],[[4],[[5]]]]]]]]]]]]])
-Z([1,true])
-Z([1,2])
-Z([[7],[3,'activeTab']])
+Z([[7],[3,'current']])
+Z([[4],[[5],[[4],[[5],[[5],[1,'^clickItem']],[[4],[[5],[[4],[[5],[1,'onClickItem']]]]]]]]])
+Z([3,'button'])
+Z([[7],[3,'items']])
 Z([3,'2'])
-Z([[4],[[5],[1,'default']]])
-Z(z[0])
-Z([3,'派送中'])
-Z([[2,'+'],[[2,'+'],[1,'3'],[1,',']],[1,'2']])
-Z(z[14])
+Z([3,'content'])
 Z([3,'index'])
 Z([3,'item'])
 Z([[7],[3,'list']])
-Z(z[19])
+Z(z[15])
 Z([3,'list'])
 Z(z[1])
 Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[[5],[1,'goDeatalis']],[[4],[[5],[1,'$0']]]],[[4],[[5],[[4],[[5],[[4],[[5],[[5],[[5],[[5],[1,'list']],[1,'']],[[7],[3,'index']]],[1,'number']]]]]]]]]]]]]]])
@@ -1311,66 +1299,62 @@ Z(z[0])
 Z([3,'ma-right'])
 Z([3,'13'])
 Z([3,'person-filled'])
-Z([[2,'+'],[[2,'+'],[[2,'+'],[1,'4-'],[[7],[3,'index']]],[1,',']],[1,'3']])
+Z([[2,'+'],[1,'3-'],[[7],[3,'index']]])
 Z(z[0])
-Z(z[27])
-Z(z[28])
+Z(z[23])
+Z(z[24])
 Z([3,'home'])
-Z([[2,'+'],[[2,'+'],[[2,'+'],[1,'5-'],[[7],[3,'index']]],[1,',']],[1,'3']])
+Z([[2,'+'],[1,'4-'],[[7],[3,'index']]])
 Z(z[0])
-Z(z[27])
-Z(z[28])
+Z(z[23])
+Z(z[24])
 Z([3,'location-filled'])
-Z([[2,'+'],[[2,'+'],[[2,'+'],[1,'6-'],[[7],[3,'index']]],[1,',']],[1,'3']])
+Z([[2,'+'],[1,'5-'],[[7],[3,'index']]])
 Z([3,'footer-right'])
 Z(z[1])
 Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[1,'retention']],[[4],[[5],[1,'$event']]]]]]]]]]])
 Z(z[0])
-Z(z[27])
+Z(z[23])
 Z([3,'11'])
 Z([3,'redo'])
-Z([[2,'+'],[[2,'+'],[[2,'+'],[1,'7-'],[[7],[3,'index']]],[1,',']],[1,'3']])
+Z([[2,'+'],[1,'6-'],[[7],[3,'index']]])
 Z(z[0])
-Z(z[27])
-Z(z[46])
-Z([3,'trash'])
-Z([[2,'+'],[[2,'+'],[[2,'+'],[1,'8-'],[[7],[3,'index']]],[1,',']],[1,'3']])
-Z(z[0])
-Z([3,'已完成'])
-Z([[2,'+'],[[2,'+'],[1,'9'],[1,',']],[1,'2']])
-Z(z[14])
-Z(z[19])
-Z(z[20])
-Z(z[21])
-Z(z[19])
 Z(z[23])
+Z(z[42])
+Z([3,'trash'])
+Z([[2,'+'],[1,'7-'],[[7],[3,'index']]])
+Z(z[15])
+Z(z[16])
+Z(z[17])
+Z(z[15])
+Z(z[19])
 Z(z[1])
+Z(z[21])
+Z(z[0])
+Z(z[23])
+Z(z[24])
 Z(z[25])
+Z([[2,'+'],[1,'8-'],[[7],[3,'index']]])
 Z(z[0])
-Z(z[27])
-Z(z[28])
-Z(z[29])
-Z([[2,'+'],[[2,'+'],[[2,'+'],[1,'10-'],[[7],[3,'index']]],[1,',']],[1,'9']])
+Z(z[23])
+Z(z[24])
+Z(z[30])
+Z([[2,'+'],[1,'9-'],[[7],[3,'index']]])
 Z(z[0])
-Z(z[27])
-Z(z[28])
-Z(z[34])
-Z([[2,'+'],[[2,'+'],[[2,'+'],[1,'11-'],[[7],[3,'index']]],[1,',']],[1,'9']])
+Z(z[23])
+Z(z[24])
+Z(z[35])
+Z([[2,'+'],[1,'10-'],[[7],[3,'index']]])
 Z(z[0])
-Z(z[27])
-Z(z[28])
-Z(z[39])
-Z([[2,'+'],[[2,'+'],[[2,'+'],[1,'12-'],[[7],[3,'index']]],[1,',']],[1,'9']])
-Z(z[0])
-Z(z[27])
-Z(z[46])
-Z(z[52])
-Z([[2,'+'],[[2,'+'],[[2,'+'],[1,'13-'],[[7],[3,'index']]],[1,',']],[1,'9']])
-})(__WXML_GLOBAL__.ops_cached.$gwx_14);return __WXML_GLOBAL__.ops_cached.$gwx_14
+Z(z[23])
+Z(z[42])
+Z(z[48])
+Z([[2,'+'],[1,'11-'],[[7],[3,'index']]])
+})(__WXML_GLOBAL__.ops_cached.$gwx_13);return __WXML_GLOBAL__.ops_cached.$gwx_13
 }
-function gz$gwx_15(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_15)return __WXML_GLOBAL__.ops_cached.$gwx_15
-__WXML_GLOBAL__.ops_cached.$gwx_15=[];
+function gz$gwx_14(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_14)return __WXML_GLOBAL__.ops_cached.$gwx_14
+__WXML_GLOBAL__.ops_cached.$gwx_14=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'bg data-v-ee6eafee'])
 Z([3,'t2 data-v-ee6eafee'])
@@ -1405,33 +1389,21 @@ Z(z[7])
 Z(z[8])
 Z([3,'paperplane'])
 Z([3,'4'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_15);return __WXML_GLOBAL__.ops_cached.$gwx_15
+})(__WXML_GLOBAL__.ops_cached.$gwx_14);return __WXML_GLOBAL__.ops_cached.$gwx_14
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./components/s-ui/s-tab/index.wxml','./components/s-ui/s-tabs/index.wxml','./components/uni-icons/uni-icons.wxml','./components/uni-number-box/uni-number-box.wxml','./components/uni-search-bar/uni-search-bar.wxml','./components/uni-ui/uni-icons/uni-icons.wxml','./pages/account/login.wxml','./pages/customer/createCustomer.wxml','./pages/customer/eidtCustomer.wxml','./pages/customer/recordOrder.wxml','./pages/order/orderDetalis/orderDetalis.wxml','./pages/order/retention/retention.wxml','./pages/tabBar/customer.wxml','./pages/tabBar/orderHistory.wxml','./pages/tabBar/userCenter.wxml'];d_[x[0]]={}
+var x=['./components/tab-ss/tab-ss.wxml','./components/uni-icons/uni-icons.wxml','./components/uni-number-box/uni-number-box.wxml','./components/uni-search-bar/uni-search-bar.wxml','./components/uni-ui/uni-icons/uni-icons.wxml','./pages/account/login.wxml','./pages/customer/createCustomer.wxml','./pages/customer/eidtCustomer.wxml','./pages/customer/recordOrder.wxml','./pages/order/orderDetalis/orderDetalis.wxml','./pages/order/retention/retention.wxml','./pages/tabBar/customer.wxml','./pages/tabBar/orderHistory.wxml','./pages/tabBar/userCenter.wxml'];d_[x[0]]={}
 var m0=function(e,s,r,gg){
 var z=gz$gwx_1()
-var oB=_n('slot')
-_(r,oB)
 return r
 }
 e_[x[0]]={f:m0,j:[],i:[],ti:[],ic:[]}
 d_[x[1]]={}
 var m1=function(e,s,r,gg){
 var z=gz$gwx_2()
-var oD=_n('view')
-_rz(z,oD,'class',0,e,s,gg)
-var fE=_v()
-_(oD,fE)
-if(_oz(z,1,e,s,gg)){fE.wxVkey=1
-}
-var cF=_n('slot')
-_(oD,cF)
-fE.wxXCkey=1
-_(r,oD)
 return r
 }
 e_[x[1]]={f:m1,j:[],i:[],ti:[],ic:[]}
@@ -1444,34 +1416,34 @@ e_[x[2]]={f:m2,j:[],i:[],ti:[],ic:[]}
 d_[x[3]]={}
 var m3=function(e,s,r,gg){
 var z=gz$gwx_4()
+var fE=_n('view')
+_rz(z,fE,'class',0,e,s,gg)
+var hG=_mz(z,'view',['bindtap',1,'class',1,'data-event-opts',2,'style',3],[],e,s,gg)
+var cI=_mz(z,'uni-icons',['bind:__l',5,'class',1,'color',2,'size',3,'type',4,'vueId',5],[],e,s,gg)
+_(hG,cI)
+var oH=_v()
+_(hG,oH)
+if(_oz(z,11,e,s,gg)){oH.wxVkey=1
+var oJ=_mz(z,'view',['bindtap',12,'class',1,'data-event-opts',2],[],e,s,gg)
+var lK=_mz(z,'uni-icons',['bind:__l',15,'class',1,'color',2,'size',3,'type',4,'vueId',5],[],e,s,gg)
+_(oJ,lK)
+_(oH,oJ)
+}
+oH.wxXCkey=1
+oH.wxXCkey=3
+_(fE,hG)
+var cF=_v()
+_(fE,cF)
+if(_oz(z,21,e,s,gg)){cF.wxVkey=1
+}
+cF.wxXCkey=1
+_(r,fE)
 return r
 }
 e_[x[3]]={f:m3,j:[],i:[],ti:[],ic:[]}
 d_[x[4]]={}
 var m4=function(e,s,r,gg){
 var z=gz$gwx_5()
-var oJ=_n('view')
-_rz(z,oJ,'class',0,e,s,gg)
-var aL=_mz(z,'view',['bindtap',1,'class',1,'data-event-opts',2,'style',3],[],e,s,gg)
-var eN=_mz(z,'uni-icons',['bind:__l',5,'class',1,'color',2,'size',3,'type',4,'vueId',5],[],e,s,gg)
-_(aL,eN)
-var tM=_v()
-_(aL,tM)
-if(_oz(z,11,e,s,gg)){tM.wxVkey=1
-var bO=_mz(z,'view',['bindtap',12,'class',1,'data-event-opts',2],[],e,s,gg)
-var oP=_mz(z,'uni-icons',['bind:__l',15,'class',1,'color',2,'size',3,'type',4,'vueId',5],[],e,s,gg)
-_(bO,oP)
-_(tM,bO)
-}
-tM.wxXCkey=1
-tM.wxXCkey=3
-_(oJ,aL)
-var lK=_v()
-_(oJ,lK)
-if(_oz(z,21,e,s,gg)){lK.wxVkey=1
-}
-lK.wxXCkey=1
-_(r,oJ)
 return r
 }
 e_[x[4]]={f:m4,j:[],i:[],ti:[],ic:[]}
@@ -1496,203 +1468,196 @@ e_[x[7]]={f:m7,j:[],i:[],ti:[],ic:[]}
 d_[x[8]]={}
 var m8=function(e,s,r,gg){
 var z=gz$gwx_9()
+var xQ=_n('view')
+_rz(z,xQ,'class',0,e,s,gg)
+var oR=_mz(z,'uni-number-box',['bind:__l',1,'bind:input',1,'class',2,'data-event-opts',3,'max',4,'min',5,'value',6,'vueId',7],[],e,s,gg)
+_(xQ,oR)
+var fS=_mz(z,'uni-number-box',['bind:__l',9,'bind:input',1,'class',2,'data-event-opts',3,'max',4,'min',5,'value',6,'vueId',7],[],e,s,gg)
+_(xQ,fS)
+_(r,xQ)
 return r
 }
 e_[x[8]]={f:m8,j:[],i:[],ti:[],ic:[]}
 d_[x[9]]={}
 var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
+var hU=_n('view')
 var oV=_n('view')
 _rz(z,oV,'class',0,e,s,gg)
-var cW=_mz(z,'uni-number-box',['bind:__l',1,'bind:input',1,'class',2,'data-event-opts',3,'max',4,'min',5,'value',6,'vueId',7],[],e,s,gg)
+var cW=_mz(z,'uni-icons',['bind:__l',1,'class',1,'size',2,'type',3,'vueId',4],[],e,s,gg)
 _(oV,cW)
-var oX=_mz(z,'uni-number-box',['bind:__l',9,'bind:input',1,'class',2,'data-event-opts',3,'max',4,'min',5,'value',6,'vueId',7],[],e,s,gg)
+var oX=_mz(z,'uni-icons',['bind:__l',6,'class',1,'size',2,'type',3,'vueId',4],[],e,s,gg)
 _(oV,oX)
-_(r,oV)
+_(hU,oV)
+var lY=_n('view')
+_rz(z,lY,'class',11,e,s,gg)
+var aZ=_mz(z,'uni-icons',['bind:__l',12,'class',1,'size',2,'style',3,'type',4,'vueId',5],[],e,s,gg)
+_(lY,aZ)
+var t1=_mz(z,'uni-icons',['bind:__l',18,'class',1,'size',2,'style',3,'type',4,'vueId',5],[],e,s,gg)
+_(lY,t1)
+_(hU,lY)
+_(r,hU)
 return r
 }
 e_[x[9]]={f:m9,j:[],i:[],ti:[],ic:[]}
 d_[x[10]]={}
 var m10=function(e,s,r,gg){
 var z=gz$gwx_11()
-var aZ=_n('view')
-var t1=_n('view')
-_rz(z,t1,'class',0,e,s,gg)
-var e2=_mz(z,'uni-icons',['bind:__l',1,'class',1,'size',2,'type',3,'vueId',4],[],e,s,gg)
-_(t1,e2)
-var b3=_mz(z,'uni-icons',['bind:__l',6,'class',1,'size',2,'type',3,'vueId',4],[],e,s,gg)
-_(t1,b3)
-_(aZ,t1)
-var o4=_n('view')
-_rz(z,o4,'class',11,e,s,gg)
-var x5=_mz(z,'uni-icons',['bind:__l',12,'class',1,'size',2,'style',3,'type',4,'vueId',5],[],e,s,gg)
-_(o4,x5)
-var o6=_mz(z,'uni-icons',['bind:__l',18,'class',1,'size',2,'style',3,'type',4,'vueId',5],[],e,s,gg)
-_(o4,o6)
-_(aZ,o4)
-_(r,aZ)
+var b3=_n('view')
+var o4=_mz(z,'uni-search-bar',['bind:__l',0,'bind:input',1,'data-event-opts',1,'placeholder',2,'value',3,'vueId',4],[],e,s,gg)
+_(b3,o4)
+var x5=_v()
+_(b3,x5)
+var o6=function(c8,f7,h9,gg){
+var cAB=_n('view')
+_rz(z,cAB,'class',10,c8,f7,gg)
+var oBB=_mz(z,'view',['bindtap',11,'data-event-opts',1],[],c8,f7,gg)
+var lCB=_mz(z,'uni-icons',['bind:__l',13,'class',1,'size',2,'type',3,'vueId',4],[],c8,f7,gg)
+_(oBB,lCB)
+var aDB=_mz(z,'uni-icons',['bind:__l',18,'class',1,'size',2,'type',3,'vueId',4],[],c8,f7,gg)
+_(oBB,aDB)
+var tEB=_mz(z,'uni-icons',['bind:__l',23,'class',1,'size',2,'type',3,'vueId',4],[],c8,f7,gg)
+_(oBB,tEB)
+_(cAB,oBB)
+var eFB=_mz(z,'uni-icons',['bind:__l',28,'class',1,'size',2,'type',3,'vueId',4],[],c8,f7,gg)
+_(cAB,eFB)
+_(h9,cAB)
+return h9
+}
+x5.wxXCkey=4
+_2z(z,8,o6,e,s,gg,x5,'item','index','index')
+_(r,b3)
 return r
 }
 e_[x[10]]={f:m10,j:[],i:[],ti:[],ic:[]}
 d_[x[11]]={}
 var m11=function(e,s,r,gg){
 var z=gz$gwx_12()
-var c8=_n('view')
-var h9=_mz(z,'uni-search-bar',['bind:__l',0,'bind:input',1,'data-event-opts',1,'placeholder',2,'value',3,'vueId',4],[],e,s,gg)
-_(c8,h9)
-var o0=_v()
-_(c8,o0)
-var cAB=function(lCB,oBB,aDB,gg){
-var eFB=_n('view')
-_rz(z,eFB,'class',10,lCB,oBB,gg)
-var bGB=_mz(z,'view',['bindtap',11,'data-event-opts',1],[],lCB,oBB,gg)
-var oHB=_mz(z,'uni-icons',['bind:__l',13,'class',1,'size',2,'type',3,'vueId',4],[],lCB,oBB,gg)
-_(bGB,oHB)
-var xIB=_mz(z,'uni-icons',['bind:__l',18,'class',1,'size',2,'type',3,'vueId',4],[],lCB,oBB,gg)
-_(bGB,xIB)
-var oJB=_mz(z,'uni-icons',['bind:__l',23,'class',1,'size',2,'type',3,'vueId',4],[],lCB,oBB,gg)
-_(bGB,oJB)
-_(eFB,bGB)
-var fKB=_mz(z,'uni-icons',['bind:__l',28,'class',1,'size',2,'type',3,'vueId',4],[],lCB,oBB,gg)
-_(eFB,fKB)
-_(aDB,eFB)
-return aDB
+var oHB=_n('view')
+var xIB=_mz(z,'uni-search-bar',['bind:__l',0,'bind:input',1,'data-event-opts',1,'placeholder',2,'value',3,'vueId',4],[],e,s,gg)
+_(oHB,xIB)
+var oJB=_v()
+_(oHB,oJB)
+var fKB=function(hMB,cLB,oNB,gg){
+var oPB=_n('view')
+_rz(z,oPB,'class',10,hMB,cLB,gg)
+var lQB=_mz(z,'uni-icons',['bind:__l',11,'class',1,'size',2,'style',3,'type',4,'vueId',5],[],hMB,cLB,gg)
+_(oPB,lQB)
+var aRB=_n('view')
+var tSB=_mz(z,'uni-icons',['bind:__l',17,'class',1,'size',2,'type',3,'vueId',4],[],hMB,cLB,gg)
+_(aRB,tSB)
+var eTB=_mz(z,'uni-icons',['bind:__l',22,'class',1,'size',2,'type',3,'vueId',4],[],hMB,cLB,gg)
+_(aRB,eTB)
+var bUB=_mz(z,'uni-icons',['bind:__l',27,'class',1,'size',2,'type',3,'vueId',4],[],hMB,cLB,gg)
+_(aRB,bUB)
+_(oPB,aRB)
+var oVB=_n('view')
+_rz(z,oVB,'class',32,hMB,cLB,gg)
+var xWB=_mz(z,'view',['bindtap',33,'data-event-opts',1],[],hMB,cLB,gg)
+var oXB=_mz(z,'uni-icons',['bind:__l',35,'class',1,'size',2,'type',3,'vueId',4],[],hMB,cLB,gg)
+_(xWB,oXB)
+_(oVB,xWB)
+var fYB=_mz(z,'uni-icons',['bind:__l',40,'class',1,'size',2,'type',3,'vueId',4],[],hMB,cLB,gg)
+_(oVB,fYB)
+_(oPB,oVB)
+_(oNB,oPB)
+return oNB
 }
-o0.wxXCkey=4
-_2z(z,8,cAB,e,s,gg,o0,'item','index','index')
-_(r,c8)
+oJB.wxXCkey=4
+_2z(z,8,fKB,e,s,gg,oJB,'item','index','index')
+_(r,oHB)
 return r
 }
 e_[x[11]]={f:m11,j:[],i:[],ti:[],ic:[]}
 d_[x[12]]={}
 var m12=function(e,s,r,gg){
 var z=gz$gwx_13()
-var hMB=_n('view')
-var oNB=_mz(z,'uni-search-bar',['bind:__l',0,'bind:input',1,'data-event-opts',1,'placeholder',2,'value',3,'vueId',4],[],e,s,gg)
-_(hMB,oNB)
-var cOB=_v()
-_(hMB,cOB)
-var oPB=function(aRB,lQB,tSB,gg){
-var bUB=_n('view')
-_rz(z,bUB,'class',10,aRB,lQB,gg)
-var oVB=_mz(z,'uni-icons',['bind:__l',11,'class',1,'size',2,'style',3,'type',4,'vueId',5],[],aRB,lQB,gg)
-_(bUB,oVB)
-var xWB=_n('view')
-var oXB=_mz(z,'uni-icons',['bind:__l',17,'class',1,'size',2,'type',3,'vueId',4],[],aRB,lQB,gg)
-_(xWB,oXB)
-var fYB=_mz(z,'uni-icons',['bind:__l',22,'class',1,'size',2,'type',3,'vueId',4],[],aRB,lQB,gg)
-_(xWB,fYB)
-var cZB=_mz(z,'uni-icons',['bind:__l',27,'class',1,'size',2,'type',3,'vueId',4],[],aRB,lQB,gg)
-_(xWB,cZB)
-_(bUB,xWB)
 var h1B=_n('view')
-_rz(z,h1B,'class',32,aRB,lQB,gg)
-var o2B=_mz(z,'view',['bindtap',33,'data-event-opts',1],[],aRB,lQB,gg)
-var c3B=_mz(z,'uni-icons',['bind:__l',35,'class',1,'size',2,'type',3,'vueId',4],[],aRB,lQB,gg)
-_(o2B,c3B)
+var o2B=_mz(z,'uni-search-bar',['bind:__l',0,'bind:input',1,'data-event-opts',1,'placeholder',2,'value',3,'vueId',4],[],e,s,gg)
 _(h1B,o2B)
-var o4B=_mz(z,'uni-icons',['bind:__l',40,'class',1,'size',2,'type',3,'vueId',4],[],aRB,lQB,gg)
-_(h1B,o4B)
-_(bUB,h1B)
-_(tSB,bUB)
-return tSB
+var c3B=_mz(z,'uni-segmented-control',['activeColor',6,'bind:__l',1,'bind:clickItem',2,'current',3,'data-event-opts',4,'styleType',5,'values',6,'vueId',7],[],e,s,gg)
+_(h1B,c3B)
+var o4B=_n('view')
+_rz(z,o4B,'class',14,e,s,gg)
+var l5B=_v()
+_(o4B,l5B)
+var a6B=function(e8B,t7B,b9B,gg){
+var xAC=_n('view')
+_rz(z,xAC,'class',19,e8B,t7B,gg)
+var oBC=_mz(z,'view',['bindtap',20,'data-event-opts',1],[],e8B,t7B,gg)
+var fCC=_mz(z,'uni-icons',['bind:__l',22,'class',1,'size',2,'type',3,'vueId',4],[],e8B,t7B,gg)
+_(oBC,fCC)
+var cDC=_mz(z,'uni-icons',['bind:__l',27,'class',1,'size',2,'type',3,'vueId',4],[],e8B,t7B,gg)
+_(oBC,cDC)
+var hEC=_mz(z,'uni-icons',['bind:__l',32,'class',1,'size',2,'type',3,'vueId',4],[],e8B,t7B,gg)
+_(oBC,hEC)
+_(xAC,oBC)
+var oFC=_n('view')
+_rz(z,oFC,'class',37,e8B,t7B,gg)
+var cGC=_mz(z,'view',['bindtap',38,'data-event-opts',1],[],e8B,t7B,gg)
+var oHC=_mz(z,'uni-icons',['bind:__l',40,'class',1,'size',2,'type',3,'vueId',4],[],e8B,t7B,gg)
+_(cGC,oHC)
+_(oFC,cGC)
+var lIC=_mz(z,'uni-icons',['bind:__l',45,'class',1,'size',2,'type',3,'vueId',4],[],e8B,t7B,gg)
+_(oFC,lIC)
+_(xAC,oFC)
+_(b9B,xAC)
+return b9B
 }
-cOB.wxXCkey=4
-_2z(z,8,oPB,e,s,gg,cOB,'item','index','index')
-_(r,hMB)
+l5B.wxXCkey=4
+_2z(z,17,a6B,e,s,gg,l5B,'item','index','index')
+var aJC=_v()
+_(o4B,aJC)
+var tKC=function(bMC,eLC,oNC,gg){
+var oPC=_n('view')
+_rz(z,oPC,'class',54,bMC,eLC,gg)
+var fQC=_mz(z,'view',['bindtap',55,'data-event-opts',1],[],bMC,eLC,gg)
+var cRC=_mz(z,'uni-icons',['bind:__l',57,'class',1,'size',2,'type',3,'vueId',4],[],bMC,eLC,gg)
+_(fQC,cRC)
+var hSC=_mz(z,'uni-icons',['bind:__l',62,'class',1,'size',2,'type',3,'vueId',4],[],bMC,eLC,gg)
+_(fQC,hSC)
+var oTC=_mz(z,'uni-icons',['bind:__l',67,'class',1,'size',2,'type',3,'vueId',4],[],bMC,eLC,gg)
+_(fQC,oTC)
+_(oPC,fQC)
+var cUC=_mz(z,'uni-icons',['bind:__l',72,'class',1,'size',2,'type',3,'vueId',4],[],bMC,eLC,gg)
+_(oPC,cUC)
+_(oNC,oPC)
+return oNC
+}
+aJC.wxXCkey=4
+_2z(z,52,tKC,e,s,gg,aJC,'item','index','index')
+_(h1B,o4B)
+_(r,h1B)
 return r
 }
 e_[x[12]]={f:m12,j:[],i:[],ti:[],ic:[]}
 d_[x[13]]={}
 var m13=function(e,s,r,gg){
 var z=gz$gwx_14()
-var a6B=_n('view')
-var t7B=_mz(z,'uni-search-bar',['bind:__l',0,'bind:input',1,'data-event-opts',1,'placeholder',2,'value',3,'vueId',4],[],e,s,gg)
-_(a6B,t7B)
-var e8B=_mz(z,'s-tabs',['bind:__l',6,'bind:change',1,'bind:input',2,'data-event-opts',3,'effect',4,'navPerView',5,'value',6,'vueId',7,'vueSlots',8],[],e,s,gg)
-var b9B=_mz(z,'s-tab',['bind:__l',15,'title',1,'vueId',2,'vueSlots',3],[],e,s,gg)
-var o0B=_v()
-_(b9B,o0B)
-var xAC=function(fCC,oBC,cDC,gg){
-var oFC=_n('view')
-_rz(z,oFC,'class',23,fCC,oBC,gg)
-var cGC=_mz(z,'view',['bindtap',24,'data-event-opts',1],[],fCC,oBC,gg)
-var oHC=_mz(z,'uni-icons',['bind:__l',26,'class',1,'size',2,'type',3,'vueId',4],[],fCC,oBC,gg)
-_(cGC,oHC)
-var lIC=_mz(z,'uni-icons',['bind:__l',31,'class',1,'size',2,'type',3,'vueId',4],[],fCC,oBC,gg)
-_(cGC,lIC)
-var aJC=_mz(z,'uni-icons',['bind:__l',36,'class',1,'size',2,'type',3,'vueId',4],[],fCC,oBC,gg)
-_(cGC,aJC)
-_(oFC,cGC)
-var tKC=_n('view')
-_rz(z,tKC,'class',41,fCC,oBC,gg)
-var eLC=_mz(z,'view',['bindtap',42,'data-event-opts',1],[],fCC,oBC,gg)
-var bMC=_mz(z,'uni-icons',['bind:__l',44,'class',1,'size',2,'type',3,'vueId',4],[],fCC,oBC,gg)
-_(eLC,bMC)
-_(tKC,eLC)
-var oNC=_mz(z,'uni-icons',['bind:__l',49,'class',1,'size',2,'type',3,'vueId',4],[],fCC,oBC,gg)
-_(tKC,oNC)
-_(oFC,tKC)
-_(cDC,oFC)
-return cDC
-}
-o0B.wxXCkey=4
-_2z(z,21,xAC,e,s,gg,o0B,'item','index','index')
-_(e8B,b9B)
-var xOC=_mz(z,'s-tab',['bind:__l',54,'title',1,'vueId',2,'vueSlots',3],[],e,s,gg)
-var oPC=_v()
-_(xOC,oPC)
-var fQC=function(hSC,cRC,oTC,gg){
-var oVC=_n('view')
-_rz(z,oVC,'class',62,hSC,cRC,gg)
-var lWC=_mz(z,'view',['bindtap',63,'data-event-opts',1],[],hSC,cRC,gg)
-var aXC=_mz(z,'uni-icons',['bind:__l',65,'class',1,'size',2,'type',3,'vueId',4],[],hSC,cRC,gg)
+var lWC=_n('view')
+_rz(z,lWC,'class',0,e,s,gg)
+var aXC=_n('view')
+_rz(z,aXC,'class',1,e,s,gg)
+var tYC=_mz(z,'view',['bindtap',2,'class',1,'data-event-opts',2],[],e,s,gg)
+var eZC=_mz(z,'uni-icons',['bind:__l',5,'class',1,'size',2,'style',3,'type',4,'vueId',5],[],e,s,gg)
+_(tYC,eZC)
+_(aXC,tYC)
+var b1C=_mz(z,'view',['bindtap',11,'class',1,'data-event-opts',2],[],e,s,gg)
+var o2C=_mz(z,'uni-icons',['bind:__l',14,'class',1,'size',2,'style',3,'type',4,'vueId',5],[],e,s,gg)
+_(b1C,o2C)
+_(aXC,b1C)
 _(lWC,aXC)
-var tYC=_mz(z,'uni-icons',['bind:__l',70,'class',1,'size',2,'type',3,'vueId',4],[],hSC,cRC,gg)
-_(lWC,tYC)
-var eZC=_mz(z,'uni-icons',['bind:__l',75,'class',1,'size',2,'type',3,'vueId',4],[],hSC,cRC,gg)
-_(lWC,eZC)
-_(oVC,lWC)
-var b1C=_mz(z,'uni-icons',['bind:__l',80,'class',1,'size',2,'type',3,'vueId',4],[],hSC,cRC,gg)
-_(oVC,b1C)
-_(oTC,oVC)
-return oTC
-}
-oPC.wxXCkey=4
-_2z(z,60,fQC,e,s,gg,oPC,'item','index','index')
-_(e8B,xOC)
-_(a6B,e8B)
-_(r,a6B)
+var x3C=_n('view')
+_rz(z,x3C,'class',20,e,s,gg)
+var o4C=_mz(z,'uni-icons',['bind:__l',21,'class',1,'size',2,'style',3,'type',4,'vueId',5],[],e,s,gg)
+_(x3C,o4C)
+var f5C=_mz(z,'uni-icons',['bind:__l',27,'class',1,'size',2,'style',3,'type',4,'vueId',5],[],e,s,gg)
+_(x3C,f5C)
+_(lWC,x3C)
+_(r,lWC)
 return r
 }
 e_[x[13]]={f:m13,j:[],i:[],ti:[],ic:[]}
-d_[x[14]]={}
-var m14=function(e,s,r,gg){
-var z=gz$gwx_15()
-var x3C=_n('view')
-_rz(z,x3C,'class',0,e,s,gg)
-var o4C=_n('view')
-_rz(z,o4C,'class',1,e,s,gg)
-var f5C=_mz(z,'view',['bindtap',2,'class',1,'data-event-opts',2],[],e,s,gg)
-var c6C=_mz(z,'uni-icons',['bind:__l',5,'class',1,'size',2,'style',3,'type',4,'vueId',5],[],e,s,gg)
-_(f5C,c6C)
-_(o4C,f5C)
-var h7C=_mz(z,'view',['bindtap',11,'class',1,'data-event-opts',2],[],e,s,gg)
-var o8C=_mz(z,'uni-icons',['bind:__l',14,'class',1,'size',2,'style',3,'type',4,'vueId',5],[],e,s,gg)
-_(h7C,o8C)
-_(o4C,h7C)
-_(x3C,o4C)
-var c9C=_n('view')
-_rz(z,c9C,'class',20,e,s,gg)
-var o0C=_mz(z,'uni-icons',['bind:__l',21,'class',1,'size',2,'style',3,'type',4,'vueId',5],[],e,s,gg)
-_(c9C,o0C)
-var lAD=_mz(z,'uni-icons',['bind:__l',27,'class',1,'size',2,'style',3,'type',4,'vueId',5],[],e,s,gg)
-_(c9C,lAD)
-_(x3C,c9C)
-_(r,x3C)
-return r
-}
-e_[x[14]]={f:m14,j:[],i:[],ti:[],ic:[]}
 if(path&&e_[path]){
 return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
 var main=e_[path].f
@@ -1710,28 +1675,25 @@ return root;
 
 
 
-__wxAppCode__['app.json']={"pages":["pages/tabBar/userCenter","pages/account/login","pages/order/orderDetalis/orderDetalis","pages/tabBar/orderHistory","pages/tabBar/customer","pages/customer/createCustomer","pages/customer/eidtCustomer","pages/customer/recordOrder","pages/order/retention/retention"],"window":{"navigationBarTextStyle":"black","navigationBarBackgroundColor":"#FFFFFF","backgroundColor":"#F8F8F8"},"tabBar":{"color":"#C3B8B4","selectedColor":"dodgerblue","borderStyle":"white","backgroundColor":"#FFFFFF","list":[{"pagePath":"pages/tabBar/customer","text":"录单","iconPath":"static/tabBaricons/ludan2.png","selectedIconPath":"static/tabBaricons/ludan.png"},{"pagePath":"pages/tabBar/orderHistory","text":"派单","iconPath":"static/tabBaricons/order2.png","selectedIconPath":"static/tabBaricons/order.png"},{"pagePath":"pages/tabBar/userCenter","text":"我的","iconPath":"static/tabBaricons/user2.png","selectedIconPath":"static/tabBaricons/user.png"}]},"nvueCompiler":"uni-app","renderer":"auto","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"iceBro","compilerVersion":"2.6.0","usingComponents":{}};
+__wxAppCode__['app.json']={"pages":["pages/tabBar/userCenter","pages/account/login","pages/order/orderDetalis/orderDetalis","pages/tabBar/orderHistory","pages/tabBar/customer","pages/customer/createCustomer","pages/customer/eidtCustomer","pages/customer/recordOrder","pages/order/retention/retention","components/tab-ss/tab-ss"],"window":{"navigationBarTextStyle":"black","navigationBarBackgroundColor":"#FFFFFF","backgroundColor":"#F8F8F8"},"tabBar":{"color":"#C3B8B4","selectedColor":"dodgerblue","borderStyle":"white","backgroundColor":"#FFFFFF","list":[{"pagePath":"pages/tabBar/customer","text":"录单","iconPath":"static/tabBaricons/ludan2.png","selectedIconPath":"static/tabBaricons/ludan.png"},{"pagePath":"pages/tabBar/orderHistory","text":"派单","iconPath":"static/tabBaricons/order2.png","selectedIconPath":"static/tabBaricons/order.png"},{"pagePath":"pages/tabBar/userCenter","text":"我的","iconPath":"static/tabBaricons/user2.png","selectedIconPath":"static/tabBaricons/user.png"}]},"nvueCompiler":"uni-app","renderer":"auto","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"appname":"iceBro","compilerVersion":"2.6.0","usingComponents":{}};
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
-__wxAppCode__['components/s-ui/s-tab/index.json']={"component":true,"usingComponents":{}};
-__wxAppCode__['components/s-ui/s-tab/index.wxml']=$gwx('./components/s-ui/s-tab/index.wxml');
+__wxAppCode__['components/tab-ss/tab-ss.json']={"usingComponents":{}};
+__wxAppCode__['components/tab-ss/tab-ss.wxml']=$gwx('./components/tab-ss/tab-ss.wxml');
 
-__wxAppCode__['components/s-ui/s-tabs/index.json']={"component":true,"usingComponents":{}};
-__wxAppCode__['components/s-ui/s-tabs/index.wxml']=$gwx('./components/s-ui/s-tabs/index.wxml');
-
-__wxAppCode__['components/uni-icons/uni-icons.json']={"component":true,"usingComponents":{}};
+__wxAppCode__['components/uni-icons/uni-icons.json']={"usingComponents":{},"component":true};
 __wxAppCode__['components/uni-icons/uni-icons.wxml']=$gwx('./components/uni-icons/uni-icons.wxml');
 
-__wxAppCode__['components/uni-number-box/uni-number-box.json']={"component":true,"usingComponents":{}};
+__wxAppCode__['components/uni-number-box/uni-number-box.json']={"usingComponents":{},"component":true};
 __wxAppCode__['components/uni-number-box/uni-number-box.wxml']=$gwx('./components/uni-number-box/uni-number-box.wxml');
 
-__wxAppCode__['components/uni-search-bar/uni-search-bar.json']={"component":true,"usingComponents":{"uni-icons":"/components/uni-icons/uni-icons"}};
+__wxAppCode__['components/uni-search-bar/uni-search-bar.json']={"usingComponents":{"uni-icons":"/components/uni-icons/uni-icons"},"component":true};
 __wxAppCode__['components/uni-search-bar/uni-search-bar.wxml']=$gwx('./components/uni-search-bar/uni-search-bar.wxml');
 
 __wxAppCode__['components/uni-ui/uni-icons/uni-icons.json']={"component":true,"usingComponents":{}};
 __wxAppCode__['components/uni-ui/uni-icons/uni-icons.wxml']=$gwx('./components/uni-ui/uni-icons/uni-icons.wxml');
 
-__wxAppCode__['pages/account/login.json']={"titleView":false,"usingComponents":{"uni-icons":"/components/uni-ui/uni-icons/uni-icons"}};
+__wxAppCode__['pages/account/login.json']={"navigationStyle":"custom","titleView":false,"usingComponents":{"uni-icons":"/components/uni-ui/uni-icons/uni-icons"}};
 __wxAppCode__['pages/account/login.wxml']=$gwx('./pages/account/login.wxml');
 
 __wxAppCode__['pages/customer/createCustomer.json']={"navigationBarTitleText":"新增客户信息","usingComponents":{"uni-icons":"/components/uni-icons/uni-icons"}};
@@ -1752,10 +1714,10 @@ __wxAppCode__['pages/order/retention/retention.wxml']=$gwx('./pages/order/retent
 __wxAppCode__['pages/tabBar/customer.json']={"navigationBarTitleText":"请选择派送的客户","usingComponents":{"uni-search-bar":"/components/uni-search-bar/uni-search-bar","uni-icons":"/components/uni-icons/uni-icons"}};
 __wxAppCode__['pages/tabBar/customer.wxml']=$gwx('./pages/tabBar/customer.wxml');
 
-__wxAppCode__['pages/tabBar/orderHistory.json']={"titleView":false,"usingComponents":{"uni-search-bar":"/components/uni-search-bar/uni-search-bar","uni-icons":"/components/uni-icons/uni-icons","s-tabs":"/components/s-ui/s-tabs/index","s-tab":"/components/s-ui/s-tab/index"}};
+__wxAppCode__['pages/tabBar/orderHistory.json']={"navigationBarTitleText":"派单记录","usingComponents":{"uni-search-bar":"/components/uni-search-bar/uni-search-bar","uni-icons":"/components/uni-icons/uni-icons","uni-segmented-control":"/components/tab-ss/tab-ss"}};
 __wxAppCode__['pages/tabBar/orderHistory.wxml']=$gwx('./pages/tabBar/orderHistory.wxml');
 
-__wxAppCode__['pages/tabBar/userCenter.json']={"titleView":false,"usingComponents":{"uni-icons":"/components/uni-icons/uni-icons"}};
+__wxAppCode__['pages/tabBar/userCenter.json']={"navigationStyle":"custom","titleView":false,"usingComponents":{"uni-icons":"/components/uni-icons/uni-icons"}};
 __wxAppCode__['pages/tabBar/userCenter.wxml']=$gwx('./pages/tabBar/userCenter.wxml');
 
 
@@ -1768,31 +1730,31 @@ define('common/runtime.js',function(require, module, exports, window, document, 
 
 (function (e) {
   function n(n) {
-    for (var r, o, s = n[0], a = n[1], c = n[2], l = 0, p = []; l < s.length; l++) {
-      o = s[l], i[o] && p.push(i[o][0]), i[o] = 0;
+    for (var r, o, a = n[0], c = n[1], s = n[2], l = 0, p = []; l < a.length; l++) {
+      o = a[l], u[o] && p.push(u[o][0]), u[o] = 0;
     }
 
-    for (r in a) {
-      Object.prototype.hasOwnProperty.call(a, r) && (e[r] = a[r]);
+    for (r in c) {
+      Object.prototype.hasOwnProperty.call(c, r) && (e[r] = c[r]);
     }
 
-    m && m(n);
+    f && f(n);
 
     while (p.length) {
       p.shift()();
     }
 
-    return u.push.apply(u, c || []), t();
+    return i.push.apply(i, s || []), t();
   }
 
   function t() {
-    for (var e, n = 0; n < u.length; n++) {
-      for (var t = u[n], r = !0, o = 1; o < t.length; o++) {
-        var s = t[o];
-        0 !== i[s] && (r = !1);
+    for (var e, n = 0; n < i.length; n++) {
+      for (var t = i[n], r = !0, o = 1; o < t.length; o++) {
+        var a = t[o];
+        0 !== u[a] && (r = !1);
       }
 
-      r && (u.splice(n--, 1), e = a(a.s = t[0]));
+      r && (i.splice(n--, 1), e = c(c.s = t[0]));
     }
 
     return e;
@@ -1802,32 +1764,30 @@ define('common/runtime.js',function(require, module, exports, window, document, 
       o = {
     "common/runtime": 0
   },
-      i = {
+      u = {
     "common/runtime": 0
   },
-      u = [];
+      i = [];
 
-  function s(e) {
-    return a.p + "" + e + ".js";
+  function a(e) {
+    return c.p + "" + e + ".js";
   }
 
-  function a(n) {
+  function c(n) {
     if (r[n]) return r[n].exports;
     var t = r[n] = {
       i: n,
       l: !1,
       exports: {}
     };
-    return e[n].call(t.exports, t, t.exports, a), t.l = !0, t.exports;
+    return e[n].call(t.exports, t, t.exports, c), t.l = !0, t.exports;
   }
 
-  a.e = function (e) {
+  c.e = function (e) {
     var n = [],
         t = {
       "components/uni-icons/uni-icons": 1,
       "components/uni-ui/uni-icons/uni-icons": 1,
-      "components/s-ui/s-tab/index": 1,
-      "components/s-ui/s-tabs/index": 1,
       "components/uni-search-bar/uni-search-bar": 1,
       "components/uni-number-box/uni-number-box": 1
     };
@@ -1835,116 +1795,114 @@ define('common/runtime.js',function(require, module, exports, window, document, 
       for (var r = ({
         "components/uni-icons/uni-icons": "components/uni-icons/uni-icons",
         "components/uni-ui/uni-icons/uni-icons": "components/uni-ui/uni-icons/uni-icons",
-        "components/s-ui/s-tab/index": "components/s-ui/s-tab/index",
-        "components/s-ui/s-tabs/index": "components/s-ui/s-tabs/index",
         "components/uni-search-bar/uni-search-bar": "components/uni-search-bar/uni-search-bar",
         "components/uni-number-box/uni-number-box": "components/uni-number-box/uni-number-box"
-      }[e] || e) + ".wxss", i = a.p + r, u = document.getElementsByTagName("link"), s = 0; s < u.length; s++) {
-        var c = u[s],
-            l = c.getAttribute("data-href") || c.getAttribute("href");
-        if ("stylesheet" === c.rel && (l === r || l === i)) return n();
+      }[e] || e) + ".wxss", u = c.p + r, i = document.getElementsByTagName("link"), a = 0; a < i.length; a++) {
+        var s = i[a],
+            l = s.getAttribute("data-href") || s.getAttribute("href");
+        if ("stylesheet" === s.rel && (l === r || l === u)) return n();
       }
 
       var p = document.getElementsByTagName("style");
 
-      for (s = 0; s < p.length; s++) {
-        c = p[s], l = c.getAttribute("data-href");
-        if (l === r || l === i) return n();
+      for (a = 0; a < p.length; a++) {
+        s = p[a], l = s.getAttribute("data-href");
+        if (l === r || l === u) return n();
       }
 
-      var m = document.createElement("link");
-      m.rel = "stylesheet", m.type = "text/css", m.onload = n, m.onerror = function (n) {
-        var r = n && n.target && n.target.src || i,
-            u = new Error("Loading CSS chunk " + e + " failed.\n(" + r + ")");
-        u.request = r, delete o[e], m.parentNode.removeChild(m), t(u);
-      }, m.href = i;
-      var f = document.getElementsByTagName("head")[0];
-      f.appendChild(m);
+      var f = document.createElement("link");
+      f.rel = "stylesheet", f.type = "text/css", f.onload = n, f.onerror = function (n) {
+        var r = n && n.target && n.target.src || u,
+            i = new Error("Loading CSS chunk " + e + " failed.\n(" + r + ")");
+        i.request = r, delete o[e], f.parentNode.removeChild(f), t(i);
+      }, f.href = u;
+      var m = document.getElementsByTagName("head")[0];
+      m.appendChild(f);
     }).then(function () {
       o[e] = 0;
     }));
-    var r = i[e];
+    var r = u[e];
     if (0 !== r) if (r) n.push(r[2]);else {
-      var u = new Promise(function (n, t) {
-        r = i[e] = [n, t];
+      var i = new Promise(function (n, t) {
+        r = u[e] = [n, t];
       });
-      n.push(r[2] = u);
-      var c,
+      n.push(r[2] = i);
+      var s,
           l = document.createElement("script");
-      l.charset = "utf-8", l.timeout = 120, a.nc && l.setAttribute("nonce", a.nc), l.src = s(e), c = function c(n) {
+      l.charset = "utf-8", l.timeout = 120, c.nc && l.setAttribute("nonce", c.nc), l.src = a(e), s = function s(n) {
         l.onerror = l.onload = null, clearTimeout(p);
-        var t = i[e];
+        var t = u[e];
 
         if (0 !== t) {
           if (t) {
             var r = n && ("load" === n.type ? "missing" : n.type),
                 o = n && n.target && n.target.src,
-                u = new Error("Loading chunk " + e + " failed.\n(" + r + ": " + o + ")");
-            u.type = r, u.request = o, t[1](u);
+                i = new Error("Loading chunk " + e + " failed.\n(" + r + ": " + o + ")");
+            i.type = r, i.request = o, t[1](i);
           }
 
-          i[e] = void 0;
+          u[e] = void 0;
         }
       };
       var p = setTimeout(function () {
-        c({
+        s({
           type: "timeout",
           target: l
         });
       }, 12e4);
-      l.onerror = l.onload = c, document.head.appendChild(l);
+      l.onerror = l.onload = s, document.head.appendChild(l);
     }
     return Promise.all(n);
-  }, a.m = e, a.c = r, a.d = function (e, n, t) {
-    a.o(e, n) || Object.defineProperty(e, n, {
+  }, c.m = e, c.c = r, c.d = function (e, n, t) {
+    c.o(e, n) || Object.defineProperty(e, n, {
       enumerable: !0,
       get: t
     });
-  }, a.r = function (e) {
+  }, c.r = function (e) {
     "undefined" !== typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
       value: "Module"
     }), Object.defineProperty(e, "__esModule", {
       value: !0
     });
-  }, a.t = function (e, n) {
-    if (1 & n && (e = a(e)), 8 & n) return e;
+  }, c.t = function (e, n) {
+    if (1 & n && (e = c(e)), 8 & n) return e;
     if (4 & n && "object" === typeof e && e && e.__esModule) return e;
     var t = Object.create(null);
-    if (a.r(t), Object.defineProperty(t, "default", {
+    if (c.r(t), Object.defineProperty(t, "default", {
       enumerable: !0,
       value: e
     }), 2 & n && "string" != typeof e) for (var r in e) {
-      a.d(t, r, function (n) {
+      c.d(t, r, function (n) {
         return e[n];
       }.bind(null, r));
     }
     return t;
-  }, a.n = function (e) {
+  }, c.n = function (e) {
     var n = e && e.__esModule ? function () {
       return e["default"];
     } : function () {
       return e;
     };
-    return a.d(n, "a", n), n;
-  }, a.o = function (e, n) {
+    return c.d(n, "a", n), n;
+  }, c.o = function (e, n) {
     return Object.prototype.hasOwnProperty.call(e, n);
-  }, a.p = "/", a.oe = function (e) {
+  }, c.p = "/", c.oe = function (e) {
     throw console.error(e), e;
   };
-  var c = global["webpackJsonp"] = global["webpackJsonp"] || [],
-      l = c.push.bind(c);
-  c.push = n, c = c.slice();
+  var s = global["webpackJsonp"] = global["webpackJsonp"] || [],
+      l = s.push.bind(s);
+  s.push = n, s = s.slice();
 
-  for (var p = 0; p < c.length; p++) {
-    n(c[p]);
+  for (var p = 0; p < s.length; p++) {
+    n(s[p]);
   }
 
-  var m = l;
+  var f = l;
   t();
 })([]);
 });
 define('common/vendor.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["common/vendor"],{"09fa":function(t,e,n){},"0de9":function(t,e,n){"use strict";function r(t){var e=Object.prototype.toString.call(t);return e.substring(8,e.length-1)}function o(){return"string"===typeof __channelId__&&__channelId__}function i(){for(var t=arguments.length,e=new Array(t),n=0;n<t;n++)e[n]=arguments[n];var i=e.shift();if(o())return e.push(e.pop().replace("at ","uni-app:///")),console[i]["apply"](console,e);var a=e.map(function(t){var e=Object.prototype.toString.call(t);if("[object object]"===e.toLowerCase())try{t="---BEGIN:JSON---"+JSON.stringify(t)+"---END:JSON---"}catch(o){t="[object object]"}else if(null===t)t="---NULL---";else if(void 0===t)t="---UNDEFINED---";else{var n=r(t).toUpperCase();t="NUMBER"===n||"BOOLEAN"===n?"---BEGIN:"+n+"---"+t+"---END:"+n+"---":String(t)}return t}),s="";if(a.length>1){var u=a.pop();s=a.join("---COMMA---"),0===u.indexOf(" at ")?s+=u:s+="---COMMA---"+u}else s=a[0];console[i](s)}Object.defineProperty(e,"__esModule",{value:!0}),e.default=i},"3b5e":function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var r={pages:{"pages/tabBar/userCenter":{titleView:!1},"pages/account/login":{titleView:!1},"pages/order/orderDetalis/orderDetalis":{navigationBarTitleText:"订单详情"},"pages/tabBar/orderHistory":{titleView:!1},"pages/tabBar/customer":{navigationBarTitleText:"请选择派送的客户"},"pages/customer/createCustomer":{navigationBarTitleText:"新增客户信息"},"pages/customer/eidtCustomer":{navigationBarTitleText:"修改客户信息"},"pages/customer/recordOrder":{navigationBarTitleText:"录入订单信息"},"pages/order/retention/retention":{navigationBarTitleText:"滞留订单"}},globalStyle:{navigationBarTextStyle:"black",navigationBarBackgroundColor:"#FFFFFF",backgroundColor:"#F8F8F8"}};e.default=r},6654:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var r={appid:"__UNI__120561F"};e.default=r},"66fd":function(t,e,n){"use strict";n.r(e),function(t){
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["common/vendor"],{"09fa":function(t,e,n){},"0de9":function(t,e,n){"use strict";function r(t){var e=Object.prototype.toString.call(t);return e.substring(8,e.length-1)}function o(){return"string"===typeof __channelId__&&__channelId__}function i(){for(var t=arguments.length,e=new Array(t),n=0;n<t;n++)e[n]=arguments[n];var i=e.shift();if(o())return e.push(e.pop().replace("at ","uni-app:///")),console[i]["apply"](console,e);var a=e.map(function(t){var e=Object.prototype.toString.call(t);if("[object object]"===e.toLowerCase())try{t="---BEGIN:JSON---"+JSON.stringify(t)+"---END:JSON---"}catch(o){t="[object object]"}else if(null===t)t="---NULL---";else if(void 0===t)t="---UNDEFINED---";else{var n=r(t).toUpperCase();t="NUMBER"===n||"BOOLEAN"===n?"---BEGIN:"+n+"---"+t+"---END:"+n+"---":String(t)}return t}),s="";if(a.length>1){var u=a.pop();s=a.join("---COMMA---"),0===u.indexOf(" at ")?s+=u:s+="---COMMA---"+u}else s=a[0];console[i](s)}Object.defineProperty(e,"__esModule",{value:!0}),e.default=i},"3b5e":function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var r={pages:{"pages/tabBar/userCenter":{navigationStyle:"custom",titleView:!1},"pages/account/login":{navigationStyle:"custom",titleView:!1},"pages/order/orderDetalis/orderDetalis":{navigationBarTitleText:"订单详情"},"pages/tabBar/orderHistory":{navigationBarTitleText:"派单记录"},"pages/tabBar/customer":{navigationBarTitleText:"请选择派送的客户"},"pages/customer/createCustomer":{navigationBarTitleText:"新增客户信息"},"pages/customer/eidtCustomer":{navigationBarTitleText:"修改客户信息"},"pages/customer/recordOrder":{navigationBarTitleText:"录入订单信息"},"pages/order/retention/retention":{navigationBarTitleText:"滞留订单"},"components/tab-ss/tab-ss":{}},globalStyle:{navigationBarTextStyle:"black",navigationBarBackgroundColor:"#FFFFFF",backgroundColor:"#F8F8F8"}};e.default=r},6654:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var r={appid:"__UNI__120561F"};e.default=r},"66fd":function(t,e,n){"use strict";n.r(e),function(t){
 /*!
  * Vue.js v2.6.11
  * (c) 2014-2019 Evan You
@@ -1961,368 +1919,6 @@ require('./common/main.js')
 });
 require('app.js');
 
-__wxRoute = 'components/s-ui/s-tab/index';__wxRouteBegin = true;__wxAppCurrentFile__ = 'components/s-ui/s-tab/index.js';
-
-define('components/s-ui/s-tab/index.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-"use strict";
-
-(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["components/s-ui/s-tab/index"], {
-  "0e53": function e53(t, n, i) {},
-  "28b4": function b4(t, n, i) {
-    "use strict";
-
-    var e = i("0e53"),
-        a = i.n(e);
-    a.a;
-  },
-  ade6: function ade6(t, n, i) {
-    "use strict";
-
-    i.r(n);
-    var e = i("fc22"),
-        a = i.n(e);
-
-    for (var u in e) {
-      "default" !== u && function (t) {
-        i.d(n, t, function () {
-          return e[t];
-        });
-      }(u);
-    }
-
-    n["default"] = a.a;
-  },
-  b128: function b128(t, n, i) {
-    "use strict";
-
-    var e,
-        a = function a() {
-      var t = this,
-          n = t.$createElement;
-      t._self._c;
-    },
-        u = [];
-
-    i.d(n, "b", function () {
-      return a;
-    }), i.d(n, "c", function () {
-      return u;
-    }), i.d(n, "a", function () {
-      return e;
-    });
-  },
-  e918: function e918(t, n, i) {
-    "use strict";
-
-    i.r(n);
-    var e = i("b128"),
-        a = i("ade6");
-
-    for (var u in a) {
-      "default" !== u && function (t) {
-        i.d(n, t, function () {
-          return a[t];
-        });
-      }(u);
-    }
-
-    i("28b4");
-    var r,
-        s = i("f0c5"),
-        c = Object(s["a"])(a["default"], e["b"], e["c"], !1, null, null, null, !1, e["a"], r);
-    n["default"] = c.exports;
-  },
-  fc22: function fc22(t, n, i) {
-    "use strict";
-
-    Object.defineProperty(n, "__esModule", {
-      value: !0
-    }), n.default = void 0;
-    var e = {
-      name: "s-tab",
-      inject: ["$tabs"],
-      props: {
-        title: {
-          type: String,
-          default: ""
-        }
-      },
-      computed: {
-        isActive: function isActive() {
-          return this.$tabs.navList[this.$tabs.value].id === this.id;
-        }
-      },
-      data: function data() {
-        return {
-          id: "s-tab-id-" + Math.random().toString(36).substr(2)
-        };
-      },
-      created: function created() {
-        var t = this.id,
-            n = this.title;
-        this.$tabs.navList = this.$tabs.navList.concat({
-          id: t,
-          title: n
-        });
-      },
-      beforeDestroy: function beforeDestroy() {
-        var t = this;
-        this.$tabs.navList = this.$tabs.navList.filter(function (n) {
-          return n.id !== t.id;
-        });
-      }
-    };
-    n.default = e;
-  }
-}]);
-;
-(global["webpackJsonp"] = global["webpackJsonp"] || []).push(['components/s-ui/s-tab/index-create-component', {
-  'components/s-ui/s-tab/index-create-component': function componentsSUiSTabIndexCreateComponent(module, exports, __webpack_require__) {
-    __webpack_require__('6e42')['createComponent'](__webpack_require__("e918"));
-  }
-}, [['components/s-ui/s-tab/index-create-component']]]);
-});
-require('components/s-ui/s-tab/index.js');
-__wxRoute = 'components/s-ui/s-tabs/index';__wxRouteBegin = true;__wxAppCurrentFile__ = 'components/s-ui/s-tabs/index.js';
-
-define('components/s-ui/s-tabs/index.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-"use strict";
-
-(global["webpackJsonp"] = global["webpackJsonp"] || []).push([["components/s-ui/s-tabs/index"], {
-  6122: function _(t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var i = n("b9a2"),
-        r = n("72a6");
-
-    for (var a in r) {
-      "default" !== a && function (t) {
-        n.d(e, t, function () {
-          return r[t];
-        });
-      }(a);
-    }
-
-    n("9529");
-    var u,
-        o = n("f0c5"),
-        l = Object(o["a"])(r["default"], i["b"], i["c"], !1, null, null, null, !1, i["a"], u);
-    e["default"] = l.exports;
-  },
-  "72a6": function a6(t, e, n) {
-    "use strict";
-
-    n.r(e);
-    var i = n("fb90"),
-        r = n.n(i);
-
-    for (var a in i) {
-      "default" !== a && function (t) {
-        n.d(e, t, function () {
-          return i[t];
-        });
-      }(a);
-    }
-
-    e["default"] = r.a;
-  },
-  9529: function _(t, e, n) {
-    "use strict";
-
-    var i = n("e88c"),
-        r = n.n(i);
-    r.a;
-  },
-  b9a2: function b9a2(t, e, n) {
-    "use strict";
-
-    var i,
-        r = function r() {
-      var t = this,
-          e = t.$createElement;
-      t._self._c;
-    },
-        a = [];
-
-    n.d(e, "b", function () {
-      return r;
-    }), n.d(e, "c", function () {
-      return a;
-    }), n.d(e, "a", function () {
-      return i;
-    });
-  },
-  e88c: function e88c(t, e, n) {},
-  fb90: function fb90(t, e, n) {
-    "use strict";
-
-    (function (t) {
-      function n(t, e) {
-        return a(t) || r(t, e) || i();
-      }
-
-      function i() {
-        throw new TypeError("Invalid attempt to destructure non-iterable instance");
-      }
-
-      function r(t, e) {
-        var n = [],
-            i = !0,
-            r = !1,
-            a = void 0;
-
-        try {
-          for (var u, o = t[Symbol.iterator](); !(i = (u = o.next()).done); i = !0) {
-            if (n.push(u.value), e && n.length === e) break;
-          }
-        } catch (l) {
-          r = !0, a = l;
-        } finally {
-          try {
-            i || null == o["return"] || o["return"]();
-          } finally {
-            if (r) throw a;
-          }
-        }
-
-        return n;
-      }
-
-      function a(t) {
-        if (Array.isArray(t)) return t;
-      }
-
-      Object.defineProperty(e, "__esModule", {
-        value: !0
-      }), e.default = void 0;
-      var u = {
-        name: "s-tabs",
-        props: {
-          customClass: {
-            type: String,
-            default: ""
-          },
-          value: {
-            type: Number,
-            default: 0
-          },
-          color: {
-            type: String,
-            default: "#333"
-          },
-          activeColor: {
-            type: String,
-            default: "#406BDC"
-          },
-          height: {
-            type: Number,
-            default: 80
-          },
-          navPerView: {
-            type: [Number, String],
-            default: "auto"
-          },
-          effect: {
-            type: Boolean,
-            default: !1
-          },
-          duration: {
-            type: Number,
-            default: .3
-          },
-          line: {
-            type: Boolean,
-            default: !0
-          },
-          lineColor: {
-            type: String,
-            default: "#406BDC"
-          },
-          lineHeight: {
-            type: Number,
-            default: 4
-          },
-          lineScale: {
-            type: Number,
-            default: .6
-          }
-        },
-        data: function data() {
-          return {
-            scrollLeft: 0,
-            lineWidth: 0,
-            lineLeft: 0,
-            navList: []
-          };
-        },
-        computed: {
-          navWidth: function navWidth() {
-            var t = parseInt(this.navPerView);
-            return isNaN(t) ? "auto" : 100 / t + "%";
-          },
-          transform: function transform() {
-            return "transform: translate3d(".concat(-100 * this.value, "%, 0, 0);");
-          },
-          transition: function transition() {
-            return this.effect ? "transition-duration: ".concat(this.duration, "s;") : "";
-          }
-        },
-        provide: function provide() {
-          return {
-            $tabs: this
-          };
-        },
-        watch: {
-          value: function value(t) {
-            this.refreshLine(), this.$emit("change", t);
-          }
-        },
-        methods: {
-          navClick: function navClick(t) {
-            t !== this.value && this.$emit("input", t);
-          },
-          refreshLine: function refreshLine() {
-            var e = this;
-            this.line && this.$nextTick(function () {
-              var i = function i() {
-                return t.createSelectorQuery().in(e);
-              };
-
-              i().select(".s-tabs-nav-wrap").boundingClientRect().exec(function (t) {
-                var r = n(t, 1),
-                    a = r[0],
-                    u = a.width,
-                    o = 0,
-                    l = 0,
-                    c = 0;
-                i().selectAll(".s-tab-nav").boundingClientRect().exec(function (t) {
-                  var i = n(t, 1),
-                      r = i[0];
-                  r.forEach(function (t, n) {
-                    n <= e.value && (c = t.width, o += t.width), l += t.width;
-                  }), o -= c, e.scrollLeft = Math.min(Math.max(l - u, 0), Math.max(0, o - (u - c) / 2)), e.lineWidth = c * e.lineScale, e.lineLeft = o + (c - e.lineWidth) / 2;
-                });
-              });
-            });
-          }
-        },
-        mounted: function mounted() {
-          this.refreshLine();
-        }
-      };
-      e.default = u;
-    }).call(this, n("6e42")["default"]);
-  }
-}]);
-;
-(global["webpackJsonp"] = global["webpackJsonp"] || []).push(['components/s-ui/s-tabs/index-create-component', {
-  'components/s-ui/s-tabs/index-create-component': function componentsSUiSTabsIndexCreateComponent(module, exports, __webpack_require__) {
-    __webpack_require__('6e42')['createComponent'](__webpack_require__("6122"));
-  }
-}, [['components/s-ui/s-tabs/index-create-component']]]);
-});
-require('components/s-ui/s-tabs/index.js');
 __wxRoute = 'components/uni-icons/uni-icons';__wxRouteBegin = true;__wxAppCurrentFile__ = 'components/uni-icons/uni-icons.js';
 
 define('components/uni-icons/uni-icons.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
@@ -2902,7 +2498,7 @@ require('pages/order/orderDetalis/orderDetalis.js');
 __wxRoute = 'pages/tabBar/orderHistory';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/tabBar/orderHistory.js';
 
 define('pages/tabBar/orderHistory.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
-(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/tabBar/orderHistory"],{"06fa":function(e,n,r){"use strict";r.r(n);var o=r("b900"),t=r.n(o);for(var a in o)"default"!==a&&function(e){r.d(n,e,function(){return o[e]})}(a);n["default"]=t.a},"3eb2":function(e,n,r){},"43a7":function(e,n,r){"use strict";(function(e){r("09fa"),r("921b");o(r("66fd"));var n=o(r("535e"));function o(e){return e&&e.__esModule?e:{default:e}}e(n.default)}).call(this,r("6e42")["createPage"])},"47fe":function(e,n,r){"use strict";var o=r("3eb2"),t=r.n(o);t.a},"535e":function(e,n,r){"use strict";r.r(n);var o=r("c82c"),t=r("06fa");for(var a in t)"default"!==a&&function(e){r.d(n,e,function(){return t[e]})}(a);r("47fe");var u,i=r("f0c5"),s=Object(i["a"])(t["default"],o["b"],o["c"],!1,null,null,null,!1,o["a"],u);n["default"]=s.exports},b900:function(e,n,r){"use strict";(function(e,o){Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var t=function(){return Promise.all([r.e("common/vendor"),r.e("components/uni-icons/uni-icons")]).then(r.bind(null,"60af"))},a=function(){return r.e("components/uni-search-bar/uni-search-bar").then(r.bind(null,"97ff"))},u=function(){return r.e("components/s-ui/s-tabs/index").then(r.bind(null,"6122"))},i=function(){return r.e("components/s-ui/s-tab/index").then(r.bind(null,"e918"))},s={components:{sTabs:u,sTab:i,uniSearchBar:a,uniIcons:t},data:function(){return{activeTab:0,searchValue:"",list:[{number:7,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:1,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:4,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:20,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:52,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:6,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:1,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:12,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001}]}},methods:{change:function(n){e("log",n," at pages/tabBar/orderHistory.vue:172")},search:function(n){e("log",n.value," at pages/tabBar/orderHistory.vue:175")},send:function(){this.activeTab=1},retention:function(){o.navigateTo({url:"../order/retention/retention"})},goDeatalis:function(n){e("log",n," at pages/tabBar/orderHistory.vue:186"),o.navigateTo({url:"../order/orderDetalis/orderDetalis?id="+n})}}};n.default=s}).call(this,r("0de9")["default"],r("6e42")["default"])},c82c:function(e,n,r){"use strict";var o={"uni-search-bar":()=>r.e("components/uni-search-bar/uni-search-bar").then(r.bind(null,"97ff")),"uni-icons":()=>Promise.all([r.e("common/vendor"),r.e("components/uni-icons/uni-icons")]).then(r.bind(null,"60af"))},t=function(){var e=this,n=e.$createElement;e._self._c},a=[];r.d(n,"b",function(){return t}),r.d(n,"c",function(){return a}),r.d(n,"a",function(){return o})}},[["43a7","common/runtime","common/vendor"]]]);
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/tabBar/orderHistory"],{"06fa":function(e,n,r){"use strict";r.r(n);var t=r("b900"),u=r.n(t);for(var a in t)"default"!==a&&function(e){r.d(n,e,function(){return t[e]})}(a);n["default"]=u.a},3976:function(e,n,r){},"3eb2":function(e,n,r){},"43a7":function(e,n,r){"use strict";(function(e){r("09fa"),r("921b");t(r("66fd"));var n=t(r("535e"));function t(e){return e&&e.__esModule?e:{default:e}}e(n.default)}).call(this,r("6e42")["createPage"])},"47fe":function(e,n,r){"use strict";var t=r("3eb2"),u=r.n(t);u.a},"4f14":function(e,n,r){"use strict";var t={"uni-search-bar":()=>r.e("components/uni-search-bar/uni-search-bar").then(r.bind(null,"97ff")),"uni-icons":()=>Promise.all([r.e("common/vendor"),r.e("components/uni-icons/uni-icons")]).then(r.bind(null,"60af"))},u=function(){var e=this,n=e.$createElement;e._self._c},a=[];r.d(n,"b",function(){return u}),r.d(n,"c",function(){return a}),r.d(n,"a",function(){return t})},"535e":function(e,n,r){"use strict";r.r(n);var t=r("4f14"),u=r("06fa");for(var a in u)"default"!==a&&function(e){r.d(n,e,function(){return u[e]})}(a);r("47fe");var o,i=r("f0c5"),c=Object(i["a"])(u["default"],t["b"],t["c"],!1,null,null,null,!1,t["a"],o);n["default"]=c.exports},"94b3":function(e,n,r){"use strict";r.r(n);var t=r("d23d"),u=r("aa93");for(var a in u)"default"!==a&&function(e){r.d(n,e,function(){return u[e]})}(a);r("a935");var o,i=r("f0c5"),c=Object(i["a"])(u["default"],t["b"],t["c"],!1,null,"1b6a8dbb",null,!1,t["a"],o);n["default"]=c.exports},a935:function(e,n,r){"use strict";var t=r("3976"),u=r.n(t);u.a},aa93:function(e,n,r){"use strict";r.r(n);var t=r("e3b1"),u=r.n(t);for(var a in t)"default"!==a&&function(e){r.d(n,e,function(){return t[e]})}(a);n["default"]=u.a},b900:function(e,n,r){"use strict";(function(e,t){Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var u=a(r("94b3"));function a(e){return e&&e.__esModule?e:{default:e}}var o=function(){return Promise.all([r.e("common/vendor"),r.e("components/uni-icons/uni-icons")]).then(r.bind(null,"60af"))},i=function(){return r.e("components/uni-search-bar/uni-search-bar").then(r.bind(null,"97ff"))},c={components:{uniSegmentedControl:u.default,uniSearchBar:i,uniIcons:o},data:function(){return{items:["派送中","已完成"],current:0,searchValue:"",list:[{number:7,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:1,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:4,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:20,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:52,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:6,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:1,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:12,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001}]}},methods:{onClickItem:function(n){e("log",n," at pages/tabBar/orderHistory.vue:171"),this.current!=n.currentIndex&&(this.current=n.currentIndex)},search:function(n){e("log",n.value," at pages/tabBar/orderHistory.vue:177")},send:function(){this.activeTab=1},retention:function(){t.navigateTo({url:"../order/retention/retention"})},goDeatalis:function(n){e("log",n," at pages/tabBar/orderHistory.vue:188"),t.navigateTo({url:"../order/orderDetalis/orderDetalis?id="+n})}}};n.default=c}).call(this,r("0de9")["default"],r("6e42")["default"])},d23d:function(e,n,r){"use strict";var t,u=function(){var e=this,n=e.$createElement;e._self._c},a=[];r.d(n,"b",function(){return u}),r.d(n,"c",function(){return a}),r.d(n,"a",function(){return t})},e3b1:function(e,n,r){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var t={name:"UniSegmentedControl",props:{current:{type:Number,default:0},values:{type:Array,default:function(){return[]}},activeColor:{type:String,default:"#007aff"},styleType:{type:String,default:"button"}},data:function(){return{currentIndex:0}},watch:{current:function(e){e!==this.currentIndex&&(this.currentIndex=e)}},created:function(){this.currentIndex=this.current},methods:{_onClick:function(e){this.currentIndex!==e&&(this.currentIndex=e,this.$emit("clickItem",{currentIndex:e}))}}};n.default=t}},[["43a7","common/runtime","common/vendor"]]]);
 });
 require('pages/tabBar/orderHistory.js');
 __wxRoute = 'pages/tabBar/customer';__wxRouteBegin = true;__wxAppCurrentFile__ = 'pages/tabBar/customer.js';
@@ -2935,6 +2531,12 @@ define('pages/order/retention/retention.js',function(require, module, exports, w
 (global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/order/retention/retention"],{"192e":function(e,n,r){"use strict";r.r(n);var o=r("c31f"),t=r.n(o);for(var u in o)"default"!==u&&function(e){r.d(n,e,function(){return o[e]})}(u);n["default"]=t.a},6092:function(e,n,r){"use strict";var o=r("86ec"),t=r.n(o);t.a},"86ec":function(e,n,r){},"8f2b":function(e,n,r){"use strict";(function(e){r("09fa"),r("921b");o(r("66fd"));var n=o(r("9a03"));function o(e){return e&&e.__esModule?e:{default:e}}e(n.default)}).call(this,r("6e42")["createPage"])},"9a03":function(e,n,r){"use strict";r.r(n);var o=r("cbaf"),t=r("192e");for(var u in t)"default"!==u&&function(e){r.d(n,e,function(){return t[e]})}(u);r("6092");var a,i=r("f0c5"),c=Object(i["a"])(t["default"],o["b"],o["c"],!1,null,null,null,!1,o["a"],a);n["default"]=c.exports},c31f:function(e,n,r){"use strict";(function(e,o){Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var t=function(){return Promise.all([r.e("common/vendor"),r.e("components/uni-icons/uni-icons")]).then(r.bind(null,"60af"))},u=function(){return r.e("components/uni-search-bar/uni-search-bar").then(r.bind(null,"97ff"))},a={components:{uniSearchBar:u,uniIcons:t},data:function(){return{searchValue:"",list:[{number:7,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:1,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:4,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:20,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:52,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:6,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:1,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001},{number:12,username:"刘佳佳",phone:"136448798711",addres:"河南省三门市义务晨业路33号",home:"刘佳佳烧烤",order:10001}]}},methods:{search:function(n){e("log",n.value," at pages/order/retention/retention.vue:123")},goDeatalis:function(n){e("log",n," at pages/order/retention/retention.vue:126"),o.navigateTo({url:"../orderDetalis/orderDetalis?id="+n})},send:function(){o.switchTab({url:"../../tabBar/orderHistory"})}}};n.default=a}).call(this,r("0de9")["default"],r("6e42")["default"])},cbaf:function(e,n,r){"use strict";var o={"uni-search-bar":()=>r.e("components/uni-search-bar/uni-search-bar").then(r.bind(null,"97ff")),"uni-icons":()=>Promise.all([r.e("common/vendor"),r.e("components/uni-icons/uni-icons")]).then(r.bind(null,"60af"))},t=function(){var e=this,n=e.$createElement;e._self._c},u=[];r.d(n,"b",function(){return t}),r.d(n,"c",function(){return u}),r.d(n,"a",function(){return o})}},[["8f2b","common/runtime","common/vendor"]]]);
 });
 require('pages/order/retention/retention.js');
+__wxRoute = 'components/tab-ss/tab-ss';__wxRouteBegin = true;__wxAppCurrentFile__ = 'components/tab-ss/tab-ss.js';
+
+define('components/tab-ss/tab-ss.js',function(require, module, exports, window, document, frames, self, location, navigator, localStorage, history, Caches, screen, alert, confirm, prompt, fetch, XMLHttpRequest, WebSocket, webkit, WeixinJSCore, Reporter, print, WeixinJSBridge){
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/tab-ss/tab-ss"],{3976:function(t,n,e){},"94b3":function(t,n,e){"use strict";e.r(n);var r=e("d23d"),u=e("aa93");for(var a in u)"default"!==a&&function(t){e.d(n,t,function(){return u[t]})}(a);e("a935");var c,i=e("f0c5"),o=Object(i["a"])(u["default"],r["b"],r["c"],!1,null,"1b6a8dbb",null,!1,r["a"],c);n["default"]=o.exports},a935:function(t,n,e){"use strict";var r=e("3976"),u=e.n(r);u.a},aa93:function(t,n,e){"use strict";e.r(n);var r=e("e3b1"),u=e.n(r);for(var a in r)"default"!==a&&function(t){e.d(n,t,function(){return r[t]})}(a);n["default"]=u.a},af04:function(t,n,e){"use strict";(function(t){e("09fa"),e("921b");r(e("66fd"));var n=r(e("94b3"));function r(t){return t&&t.__esModule?t:{default:t}}t(n.default)}).call(this,e("6e42")["createPage"])},d23d:function(t,n,e){"use strict";var r,u=function(){var t=this,n=t.$createElement;t._self._c},a=[];e.d(n,"b",function(){return u}),e.d(n,"c",function(){return a}),e.d(n,"a",function(){return r})},e3b1:function(t,n,e){"use strict";Object.defineProperty(n,"__esModule",{value:!0}),n.default=void 0;var r={name:"UniSegmentedControl",props:{current:{type:Number,default:0},values:{type:Array,default:function(){return[]}},activeColor:{type:String,default:"#007aff"},styleType:{type:String,default:"button"}},data:function(){return{currentIndex:0}},watch:{current:function(t){t!==this.currentIndex&&(this.currentIndex=t)}},created:function(){this.currentIndex=this.current},methods:{_onClick:function(t){this.currentIndex!==t&&(this.currentIndex=t,this.$emit("clickItem",{currentIndex:t}))}}};n.default=r}},[["af04","common/runtime","common/vendor"]]]);
+});
+require('components/tab-ss/tab-ss.js');
 ;(function(global) {
     __uni_launch_ready(function() {
         var entryPagePath = __wxConfig.entryPagePath.replace('.html', '')

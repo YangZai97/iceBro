@@ -1,4 +1,5 @@
 {
+  "navigationStyle": "custom",
   "titleView": false,
   "usingComponents": {
     "uni-icons": "/components/uni-icons/uni-icons"
