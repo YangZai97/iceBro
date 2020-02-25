@@ -55,7 +55,7 @@
 			},
 			{
 				"pagePath": "pages/tabBar/orderHistory",
-				"text": "订单",
+				"text": "派单",
 				"iconPath": "static/tabBaricons/order2.png",
 				"selectedIconPath": "static/tabBaricons/order.png"
 			},
