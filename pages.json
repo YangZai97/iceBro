@@ -10,13 +10,6 @@
 			}
 		},
 		{
-			"path": "pages/tabBar/bill",
-			"style" : {
-			"h5": {
-				"titleNView": false
-			}}
-		},
-		{
 			"path": "pages/order/orderDetalis/orderDetalis",
 			"style" : {"navigationBarTitleText": "订单详情"}
 			
@@ -65,12 +58,6 @@
 				"text": "订单",
 				"iconPath": "static/tabBaricons/order2.png",
 				"selectedIconPath": "static/tabBaricons/order.png"
-			},
-			{
-				"pagePath": "pages/tabBar/bill",
-				"text": "资金流水",
-				"iconPath": "static/tabBaricons/bill2.png",
-				"selectedIconPath": "static/tabBaricons/bill.png"
 			},
 			{
 				"pagePath": "pages/tabBar/userCenter",

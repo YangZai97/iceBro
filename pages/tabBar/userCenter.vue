@@ -3,7 +3,7 @@
 		<view class="t2" style="text-align: center;">
 			<image src="../../static/haihuidai/input.png" style="width: 80px; height: 80px;"></image>
 			<view >
-				<text >{{username}}</text>
+				<text >{{phone}}</text>
 			</view>
 		</view>
 		<view class="t2">
@@ -17,12 +17,17 @@
 		<view class="t2">
 			<view class="D-flex line">
 				<uni-icons type="phone" size="30" class="icons" style="color: #6a7fff;"></uni-icons>
-				<text class="fl">手机号</text>
-				<input class="uni-input" v-model="phone" />
+				<text class="fl">手机号 </text>
+				<view >
+					{{phone}}
+				</view>
 			</view>
 			<view class="D-flex">
 				<uni-icons type="paperplane" size="30" class="icons" style="color: #6a7fff;"></uni-icons>
-				<text class="fl">昵称</text><input class="uni-input" v-model="username" />
+				<text class="fl">车牌号 </text>
+				<view >
+					{{card}}
+				</view>
 			</view>
 		</view>
 		<view class="btn"><button class="logout" type="primary" >退出登录</button></view>
@@ -34,7 +39,7 @@
 	export default {
 		data() {
 			return {
-				username: 'Jennry',
+				card: '喻A366D4',
 				phone:'13699999999'
 				
 			}
