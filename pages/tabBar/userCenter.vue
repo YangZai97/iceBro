@@ -2,13 +2,8 @@
 	<view class="bg">
 		<view class="t2" style="text-align: center;">
 			<image src="../../static/haihuidai/input.png" style="width: 80px; height: 80px;"></image>
-<<<<<<< HEAD
 			<view >
 				<text >{{phone}}</text>
-=======
-			<view>
-				<text>{{username}}</text>
->>>>>>> d9afc05f715cea39bb01af05bd866740bc3abac6
 			</view>
 		</view>
 		<view class="t2">
@@ -36,6 +31,7 @@
 			</view>
 		</view>
 		<view class="btn"><button class="logout" type="primary" >退出登录</button></view>
+	</view>
 	</view>
 </template>
 
