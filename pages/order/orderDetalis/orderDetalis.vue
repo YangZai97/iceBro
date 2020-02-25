@@ -7,25 +7,21 @@
 			<view class="order-details-top">
 				<text class="font-color-gray">车牌号:229868878</text>
 			</view>
-			<view class="order-details-footer">
-				<view>
-					<uni-icons type="checkbox" size="30"></uni-icons>
-				</view>
-				<view>
-					<text class="font-color">东边库存</text>
-				</view>
+			<view class="order-details-footer" style="margin-top: 5px;">
+
+				<uni-icons class="order-icons" type="checkbox" size="22"></uni-icons>
+
+
+				<text class="font-color">东边库存</text>
+
 			</view>
 			<view class="order-details-footer">
-				<view>
-					<uni-icons type="checkbox-filled" size="30"></uni-icons>
-				</view>
+
+				<uni-icons class="order-icons" type="checkbox-filled" size="22"></uni-icons>
+
 				<view class="order-details-footer-right">
-					<view>
-						<text class="font-color">刘佳佳 123132156465 胖子烧烤</text>
-					</view>
-					<view>
-						<text class="font-color-gray">地址：乱七八糟的地址1232131</text>
-					</view>
+					<text class="font-color">刘佳佳 123132156465 胖子烧烤</text>
+						<text class="font-color-gray" style="display: block;">地址：乱七八糟的地址1232131</text>
 				</view>
 			</view>
 		</view>
@@ -46,21 +42,17 @@
 			</view>
 		</view>
 		<view class="order-details">
-			<view class="order-details-footer">
+			<view class="order-details-footer" style="margin-bottom: 5px;">
 				<view>
-					<uni-icons type="checkbox" size="30" style="color: #9c9c9c;"></uni-icons>
+					<uni-icons type="checkbox" class="order-icons" size="22" style="color: #9c9c9c;"></uni-icons>
 				</view>
 				<view>
 					<text class="font-color-gray">2020-02-23 13:12</text>
 				</view>
 			</view>
 			<view class="order-details-footer">
-				<view>
-					<uni-icons type="checkbox-filled" size="30" style="color: #9c9c9c;"></uni-icons>
-				</view>
-				<view>
-					<text class="font-color-gray">2020-02-23 13:12</text>
-				</view>
+				<uni-icons type="checkbox-filled" class="order-icons" size="22" style="color: #9c9c9c;"></uni-icons>
+				<text class="font-color-gray">2020-02-23 13:12</text>
 			</view>
 		</view>
 	</view>
@@ -71,42 +63,55 @@
 	export default {
 		data() {
 			return {
-				
+
 			}
 		},
 		methods: {
-			
+
 		},
-		components: {uniIcons}
+		components: {
+			uniIcons
+		}
 	}
 </script>
 
 <style>
-page{
+	page {
 		background-color: #eef2f8;
-}
-.order-details{
-	background-color: #FFFFFF;
-	margin: 8px 10px;
-	padding: 10px;
-	border-radius: 5px;
-}
+	}
 
-.order-details-footer{
-	display: flex; //flex 布局 ,弹性布局
-	justify-content: flex-start; //从开始(左边)放心排列
-	align-items: center;  //垂直
-}
-text{
-	font-size: 16px;
-}
-.order-details-font{
-	padding: 3px;
-}
-.font-color{
-	color: #000000;
-}
-.font-color-gray{
-	color: #9c9c9c;
-}
+	.order-details {
+		background-color: #FFFFFF;
+		margin: 8px 10px;
+		padding: 10px;
+		border-radius: 5px;
+	}
+
+	.order-details-footer {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	text {
+		font-size: 16px;
+	}
+
+	.order-details-font {
+		padding: 0px;
+	}
+
+	.font-color {
+		color: #000000;
+		font-size: 12px;
+	}
+
+	.font-color-gray {
+		font-size: 12px;
+		color: #9c9c9c;
+	}
+
+	.order-icons {
+		margin-right: 4px;
+	}
 </style>
