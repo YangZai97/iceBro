@@ -1,7 +1,6 @@
 <template>
 	<view>
-		<text>客户资料列表</text>
-		
+		编辑客户资料信息
 	</view>
 </template>
 

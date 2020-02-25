@@ -11,8 +11,10 @@
 		},
 		{
 			"path": "pages/order/orderDetalis/orderDetalis",
-			"style" : {"navigationBarTitleText": "订单详情"}
-			
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+
 		},
 		{
 			"path": "pages/tabBar/userCenter",
@@ -21,20 +23,37 @@
 					"titleNView": false
 				}
 			}
-			
-			
 		},
 		{
 			"path": "pages/tabBar/orderHistory",
-			"style" : {"navigationBarTitleText": "订单"}
-			
+			"style": {
+				"h5": {
+					"titleNView": false
+				}
+			}
+
 		},
 		{
 			"path": "pages/tabBar/customer",
-			"style" : {"navigationBarTitleText": "请选择派送单的客户"}
-			
+			"style": {
+				"navigationBarTitleText": "请选择派送的客户"
+			}
+
+		}, {
+			"path": "pages/customer/createCustomer",
+			"style": {
+				"navigationBarTitleText": "客户资料信息"
+				
+			}
 		}
-	],
+	    ,{
+            "path" : "pages/customer/recordOrder",
+            "style" : {
+				"navigationBarTitleText": "录入订单信息"
+				
+			}
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "",

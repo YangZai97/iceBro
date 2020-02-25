@@ -1,7 +1,6 @@
 <template>
 	<view>
-		<text>客户资料列表</text>
-		
+		录入订单信息
 	</view>
 </template>
 
