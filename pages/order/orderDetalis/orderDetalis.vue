@@ -69,6 +69,9 @@
 		methods: {
 
 		},
+		onLoad(Option){
+			console.log(Option.id)
+		},
 		components: {
 			uniIcons
 		}

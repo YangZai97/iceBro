@@ -7,7 +7,7 @@
 			<s-tabs :effect="true" v-model="activeTab" @change="change" :nav-per-view="3">
 				<s-tab title="派送中">
 					<view class="lists" v-for="(item,index) in list"  :key='index'>
-						<view class="list">
+						<view class="list" >
 							<view class="list-top">
 								<view >
 									<text class="number-text">{{item.number}}件</text>
@@ -16,14 +16,16 @@
 									<button type="primary" size="mini">确认派送</button>
 								</view>
 							</view>
-							<view>
-								<uni-icons type="contact" size="13" class="ma-right"></uni-icons><text class="ma-right">{{item.username}}</text><text>{{item.phone}}</text>
-							</view>
-							<view>
-								<uni-icons type="home" size="13" class="ma-right"></uni-icons><text>{{item.home}}}</text>
-							</view>
-							<view>
-								<uni-icons type="location-filled" size="13" class="ma-right"></uni-icons><text>{{item.addres}}</text>
+							<view @click="goDeatalis(item.number)">
+								<view >
+									<uni-icons type="contact" size="13" class="ma-right"></uni-icons><text class="ma-right">{{item.username}}</text><text>{{item.phone}}</text>
+								</view>
+								<view>
+									<uni-icons type="home" size="13" class="ma-right"></uni-icons><text>{{item.home}}}</text>
+								</view>
+								<view>
+									<uni-icons type="location-filled" size="13" class="ma-right"></uni-icons><text>{{item.addres}}</text>
+								</view>
 							</view>
 							<view class="footer">
 								<view class="footer-left">
@@ -52,14 +54,16 @@
 									<text class="finish-text">已完成</text>
 								</view>
 							</view>
-							<view>
-								<uni-icons type="contact" size="13" class="ma-right"></uni-icons><text class="ma-right">{{item.username}}</text><text>{{item.phone}}</text>
-							</view>
-							<view>
-								<uni-icons type="home" size="13" class="ma-right"></uni-icons><text>{{item.home}}}</text>
-							</view>
-							<view>
-								<uni-icons type="location-filled" size="13" class="ma-right"></uni-icons><text>{{item.addres}}</text>
+							<view @click="goDeatalis(item.number)">
+								<view>
+									<uni-icons type="contact" size="13" class="ma-right"></uni-icons><text class="ma-right">{{item.username}}</text><text>{{item.phone}}</text>
+								</view>
+								<view>
+									<uni-icons type="home" size="13" class="ma-right"></uni-icons><text>{{item.home}}}</text>
+								</view>
+								<view>
+									<uni-icons type="location-filled" size="13" class="ma-right"></uni-icons><text>{{item.addres}}</text>
+								</view>
 							</view>
 							<view class="footer">
 								<view class="footer-left">
@@ -171,6 +175,12 @@
 			search(e) {
 				console.log(e.value)
 			},
+			goDeatalis(id){
+				console.log(id)
+				uni.navigateTo({
+					url:'../order/orderDetalis/orderDetalis?id='+id
+				})
+			}
 		}
 	}
 </script>

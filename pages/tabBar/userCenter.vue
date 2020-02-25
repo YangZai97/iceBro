@@ -10,7 +10,7 @@
 			<view class="D-flex line ">
 				<uni-icons type="bars" size="30" class="icons"  style="color: #6a7fff;"></uni-icons><text class="fl">滞留订单</text>
 			</view>
-			<view class="D-flex">
+			<view class="D-flex" @click="go">
 				<uni-icons type="personadd" size="30"  class="icons" style="color: #6a7fff;"></uni-icons><text class="fl">我的客户</text>
 			</view>
 		</view>
@@ -30,7 +30,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="btn"><button class="logout" type="primary" >退出登录</button></view>
+		<view class="btn"><button class="logout" type="primary"  @click="logout">退出登录</button></view>
 	</view>
 	</view>
 </template>
@@ -46,7 +46,16 @@
 			}
 		},
 		methods: {
-
+			go(){
+				uni.switchTab({
+					url:'/pages/tabBar/customer',
+				})
+			},
+			logout(){
+				uni.navigateTo({
+					url:'../account/login'
+				})
+			}
 		},
 		components: {
 			uniIcons
