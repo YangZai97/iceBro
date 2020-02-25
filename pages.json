@@ -42,7 +42,13 @@
 		}, {
 			"path": "pages/customer/createCustomer",
 			"style": {
-				"navigationBarTitleText": "客户资料信息"
+				"navigationBarTitleText": "新增客户信息"
+				
+			}
+		}, {
+			"path": "pages/customer/eidtCustomer",
+			"style": {
+				"navigationBarTitleText": "修改客户信息"
 				
 			}
 		}

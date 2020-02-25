@@ -18,5 +18,7 @@
 </script>
 
 <style>
-
+page{
+		background-color: #eef2f8;
+}
 </style>
