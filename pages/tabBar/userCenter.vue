@@ -30,7 +30,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="btn"><button class="logout" type="primary" @click="logout">退出登录</button></view>
+		<view class="btn"><button class="logout" @click="logout">退出登录</button></view>
 	</view>
 	</view>
 </template>
@@ -67,12 +67,20 @@
 	}
 </script>
 
-<style scoped>
+<style >
+	page{
+		background-color: #eef2f8;
+	}
 	.btn {
 		width: 90%;
 		margin: 0 auto;
 	}
-
+	.btn button{
+		background-color: #FFFFFF;
+		border-radius: 10px;
+		color: #333333;
+		font-size: 15px;
+	}
 	.D-flex {
 		padding: 10px;
 		display: flex;
@@ -85,7 +93,8 @@
 	}
 
 	.bg {
-		background-image: linear-gradient(#55aaff, #FFFFFF);
+		background-image:url('~@/static/haihuidai/usercenterBg.jpg') ;
+		background-repeat:no-repeat;
 		padding: 20px 0;
 	}
 
