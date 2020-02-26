@@ -166,6 +166,19 @@
 				]
 			}
 		},
+		onShow() {
+			// uni.getStorageSync('current')
+			//  uni.removeStorageSync('current');
+		  console.log(uni.getStorageSync('current'))
+		  if(uni.getStorageSync('current')===true){
+			  this.current = 1
+		  }else{
+			    this.current = 0
+		  }
+		},
+		onHide() {
+			uni.removeStorageSync('current');
+		},
 		methods: {
 			onClickItem(index) {
 				console.log(index)
@@ -177,7 +190,7 @@
 				console.log(e.value)
 			},
 			send() {
-				this.activeTab = 1
+				this.current = 1
 			},
 			retention() {
 				uni.navigateTo({

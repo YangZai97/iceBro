@@ -129,9 +129,15 @@
 				})
 			},
 			send(){
+				try {
+				    uni.setStorageSync('current', true);
+				} catch (e) {
+				    // error
+				}
 				uni.switchTab({
 					url:'../../tabBar/orderHistory'
 				})
+				
 			}
 		}
 	}
