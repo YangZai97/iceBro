@@ -91,9 +91,8 @@
 		border-bottom: 1px solid #eef5ff;
 
 	}
-
 	.bg {
-		background-image:url('~@/static/haihuidai/usercenterBg.jpg') ;
+		background-image:url('~@/static/haihuidai/usercenterBg.png') ;
 		background-repeat:no-repeat;
 		padding: 20px 0;
 	}

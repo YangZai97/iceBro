@@ -1,169 +1,94 @@
 <template>
-	<view class="login">
-		<!-- <cover-image src="/static/haihuidai/bg.png"></cover-image> -->
-		<view class="content">
-			<view class="login-form">
-				<view class="login-text">
+	<view>
+		<view class="login">
+			<view class="login-view ">
+				<view style="text-align: center;font-size: 18px; color: #000000; font-weight: 400;">
 					登录
 				</view>
-				<view class="item phone">
-					<uni-icons type="contact" size="30"></uni-icons>
-					<input class="uni-input" v-model="username" focus placeholder="用户名" placeholder-class="input-placeholder" />
-					<image class="icon right" @click="removeInput('username')" src="/static/haihuidai/delete_input.png" mode="widthFix"></image>
+				<view>
+					<input type="number" v-model="login.phone" placeholder="请输入账号" class="input" />
 				</view>
-				<view class="item password">
-					<uni-icons type="contact" size="30"></uni-icons>
-					<input class="uni-input" v-model="password" placeholder="密码" placeholder-class="input-placeholder" />
-					<image class="icon right" @click="removeInput('password')" src="/static/haihuidai/delete_input.png" mode="widthFix"></image>
+				<view>
+					<input v-model="login.password" placeholder="请输入登录密码" class="input" />
 				</view>
-				<view class="btn">
-					<text @click="login">登录</text>
+
+				<view class=" loginbtn ">
+					<button @click="defaultHandlerLogin"> 登录 </button>
 				</view>
-				<view style="text-align: center;padding-bottom: 15rpx;"><text style="font-size: 10rpx;color: #6ea0f8;font-weight: 400;">无账号用户请联系客服（QQ33215006）</text></view>
+				<view class="footer-text">
+					<text>无账号用户请联系客服（QQ33215006)</text>
+				</view>
 			</view>
 		</view>
 	</view>
 </template>
 
 <script>
-	import uniIcons from "@/components/uni-ui/uni-icons/uni-icons.vue"
 	export default {
 		data() {
 			return {
-				username: "",
-				password: ""
-			}
-		},
-		onLoad() {},
-		components: {
-			uniIcons
+				login: {
+					phone: "",
+					password: ""
+				},
+
+			};
 		},
 		methods: {
-			removeInput(value) {
-				if (value == 'password') {
-					this.password = ''
-				} else {
-					this.username = ''
-				}
-			},
-			login() {
+			defaultHandlerLogin() {
+				console.log(this.login);
 				uni.switchTab({
-					url: "/pages/tabBar/userCenter"
+					url:'../tabBar/userCenter'
 				})
-			}
+			},
 		}
 	}
 </script>
 
-<style scoped>
+<style>
 	.login {
-		background-image: url('~@/static/haihuidai/usercenterBg.jpg');
+		background-image:url('~@/static/haihuidai/logo.jpg') ;
 		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		-moz-background-size: 100% 100%;
-
+	}
+	view{
+		display: uni-view;
+	}
+	.input {
+		padding: 10px;
+		background-color: #F6F6F6;
+		border-radius: 5px;
+		color: #333333;
+		font-size: 14px;
 	}
 
-	.login-text {
-		padding-top: 20rpx;
-		text-align: center;
-		font-weight: 400;
-		margin-top: 500rpx;
-		margin-bottom: 40rpx;
-	}
-
-	.content {
-		position: absolute;
-		top: 0;
-		width: 100%;
-	}
-
-	.logo {
-		text-align: center;
-		margin: 96rpx auto 73rpx auto;
-	}
-
-	.logo image {
-		width: 50%;
-	}
-
-	.login-form {
-		width: 630rpx;
-		margin: auto;
-		background-color: #FFFFFF;
-		padding: 0 20rpx 0rpx 20rpx;
-		box-shadow: 2px 2px 4px 2px #C8C8CD, -10px 10px 10px 10px rgba(255, 255, 255, 0.5);
-		border-radius: 20rpx;
-	}
-
-	.login-form .item:nth-child(1) {
-		margin-top: 500rpx;
-	}
-
-	.login-form .item {
-		width: 630rpx;
-		height: 84rpx;
-		border-radius: 6rpx;
-		margin-bottom: 33rpx;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		background-color: #FFFFFF;
-	}
-
-	.login-form input {
-		height: 84rpx;
-		line-height: 84rpx;
-	}
-
-	.login-form .item .icon {
-		width: 36rpx;
-		height: 40rpx;
-	}
-
-	.input-placeholder {
-		line-height: 84rpx;
-		height: 84rpx;
-		margin: auto;
-	}
-
-	.login-form .btn {
-		margin: 43rpx auto 22rpx auto;
-		text-align: center;
-		height: 84rpx;
-		line-height: 84rpx;
-		border-radius: 6rpx;
-		background-color: #6ea0f8;
-	}
-
-	.forgot-pwd {
-		text-align: right;
-	}
-
-	.login-third .text {
-		margin: 137rpx auto 106rpx auto;
-		text-align: center;
-	}
-
-	.login-third .flex {
-		text-align: center;
-		display: flex;
-		justify-content: space-around;
-	}
-
-	.login-third .flex image {
-		width: 88rpx;
-		height: 88rpx;
-	}
-
-	text {
-		height: 30rpx;
-		font-family: PingFang-SC-Regular;
+	.loginbtn button {
+		color: #F6F6F6;
 		font-size: 32rpx;
-		font-weight: bold;
-		font-stretch: normal;
-		line-height: 40rpx;
-		letter-spacing: 3rpx;
-		color: #ffffff;
+		border-radius: 20rpx;
+		outline: 0;
+		background: #5D61FC;
+	}
+	.login{
+		display: flex;
+		justify-content: center;
+	}
+	.login-view {
+		margin-top: 60%;
+		width: 80%;
+		border-radius: 10px;
+		border: 1px solid #FFFFFF;
+		padding: 20px;
+		background-color: #FFFFFF;
+		box-shadow: 3px 5px 3px  #e3dde2;
+
+	}
+
+	.login-view view {
+		margin-top: 15px;
+	}
+	.footer-text{
+		text-align: center;
+		color: #4a31ff;
+		font-size: 12px;
 	}
 </style>
