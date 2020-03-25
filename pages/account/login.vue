@@ -49,6 +49,7 @@
 	.login {
 		background-image:url('~@/static/haihuidai/logo.jpg') ;
 		background-repeat: no-repeat;
+		background-size:100%;
 	}
 	view{
 		display: uni-view;

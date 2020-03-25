@@ -15,13 +15,6 @@
 			</view>
 		</view>
 		<view class="t2">
-			<view class="D-flex line">
-				<uni-icons type="phone" size="22" class="icons" style="color: #483eff;"></uni-icons>
-				<text class="fl">手机号 </text>
-				<view class="fl">
-					{{phone}}
-				</view>
-			</view>
 			<view class="D-flex">
 				<uni-icons type="paperplane" size="22" class="icons" style="color: #483eff;"></uni-icons>
 				<text class="fl">车牌号 </text>
@@ -94,6 +87,7 @@
 	.bg {
 		background-image:url('~@/static/haihuidai/usercenterBg.png') ;
 		background-repeat:no-repeat;
+		background-size:100%;
 		padding: 20px 0;
 	}
 
