@@ -9,36 +9,39 @@
 				<view class="list-top">
 					<view>
 						<uni-icons type="person-filled" size="18" style="color: #5D61FC;" class="ma-right"></uni-icons>
-						<text class="ma-right number-text">{{item.username}}</text>
-						<text class="number-text" style="font-size: 14px;">{{item.phone}}</text>
+						<text class="ma-right number-text">{{item.Name}}</text>
+						<text class="number-text" style="font-size: 14px;">{{item.Phone}}</text>
 					</view>
 					<view>
-						<button type="primary" size="mini" @click="goRecord(item.number)">录单</button>
+						<button type="primary" size="mini" @click="goRecord(item.ID)">录单</button>
 					</view>
 				</view>
 				<view>
 					<view>
-						<uni-icons type="home" size="13" class="ma-right"></uni-icons><text class="ma-right">{{item.home}}</text>
+						<uni-icons type="home" size="13" class="ma-right"></uni-icons><text class="ma-right">{{item.Shop}}</text>
 					</view>
 					<view>
-						<uni-icons type="location" size="13" class="ma-right"></uni-icons><text>{{item.addres}}</text>
+						<uni-icons type="location" size="13" class="ma-right"></uni-icons><text>{{item.Address}}</text>
 					</view>
 					<view>
-						<uni-icons type="location-filled" size="13" class="ma-right"></uni-icons><text>{{item.fromAd}}</text>
+						<uni-icons type="location-filled" size="13" class="ma-right"></uni-icons><text>{{item.Store}}</text>
 					</view>
 				</view>
 				<view class="footer">
 					<view class="footer-right">
-						<view @click="goEdit(item.number)">
+						<view @click="goEdit(item.ID)">
 							<uni-icons type="compose" size="11" class="ma-right"></uni-icons><text>编辑</text>
 						</view>
-						<view>
+						<view @click="deleteCustomer(item.ID)">
 							<uni-icons type="trash" size="11" class="ma-right"></uni-icons><text>删除</text>
 						</view>
 					</view>
 				</view>
 			</view>
 			
+		</view>
+		<view class="deleteBtn" >
+			<button type="primary" @click="goCreate()">新增客户</button>
 		</view>
 		<view class="footer-button">
 			<view >
@@ -59,85 +62,72 @@
 		data() {
 			return {
 				searchValue: '',
-				list: [{
-						number: 7,
-						username: '刘佳佳',
-						phone: '136448798711',
-						addres: '河南省三门市义务晨业路33号',
-						home: '刘佳佳烧烤',
-						order: 10001,
-						fromAd: '东北冻库'
-					},
-					{
-						number: 1,
-						username: '刘佳佳',
-						phone: '136448798711',
-						addres: '河南省三门市义务晨业路33号',
-						home: '刘佳佳烧烤',
-						order: 10001,
-						fromAd: '东北冻库'
-					},
-					{
-						number: 4,
-						username: '刘佳佳',
-						phone: '136448798711',
-						addres: '河南省三门市义务晨业路33号',
-						home: '刘佳佳烧烤',
-						order: 10001,
-						fromAd: '东北冻库'
-					},
-					{
-						number: 20,
-						username: '刘佳佳',
-						phone: '136448798711',
-						addres: '河南省三门市义务晨业路33号',
-						home: '刘佳佳烧烤',
-						order: 10001,
-						fromAd: '东北冻库'
-					},
-					{
-						number: 52,
-						username: '刘佳佳',
-						phone: '136448798711',
-						addres: '河南省三门市义务晨业路33号',
-						home: '刘佳佳烧烤',
-						order: 10001,
-						fromAd: '东北冻库'
-					},
-					{
-						number: 6,
-						username: '刘佳佳',
-						phone: '136448798711',
-						addres: '河南省三门市义务晨业路33号',
-						home: '刘佳佳烧烤',
-						order: 10001,
-						fromAd: '东北冻库'
-					},
-					{
-						number: 1,
-						username: '刘佳佳',
-						phone: '136448798711',
-						addres: '河南省三门市义务晨业路33号',
-						home: '刘佳佳烧烤',
-						order: 10001,
-						fromAd: '东北冻库'
-					},
-					{
-						number: 12,
-						username: '刘佳佳',
-						phone: '136448798711',
-						addres: '河南省三门市义务晨业路33号',
-						home: '刘佳佳烧烤',
-						order: 10001,
-						fromAd: '东北冻库'
-					}
-
-				]
+				list: []
 			}
 		},
+		onShow() {
+			this.getList()
+		},
 		methods: {
+			deleteCustomer(id){
+				uni.request({
+					url:this.$utils.apiurl+'/api/user/client/'+id,
+					method:'delete',
+					header: {
+					'Authorization': uni.getStorageSync('token')
+					},
+					success :(res)=> {
+						if(res.data.success){
+							console.log(res.data)
+							this.getList()
+						}else{
+							uni.showToast({
+								title: '系统出错',
+								duration: 2000,
+								icon: 'none'
+							});
+						}
+					}
+				})
+			},
+			getList(){
+				let data={}
+				if(this.searchValue.value){
+					data={
+						page:1,
+						search:this.searchValue.value,
+						page_size:999999
+					}
+				}else{
+					data={
+						page:1,
+						page_size:999999
+					}
+				}
+				uni.request({
+					url:this.$utils.apiurl+'/api/user/client',
+					method:'get',
+					data:data,
+					header: {
+					'Authorization': uni.getStorageSync('token')
+					},
+					success :(res)=> {
+						if(res.data.success){
+							console.log(res.data)
+							this.list= res.data.data
+						}else{
+							uni.showToast({
+								title: '系统出错,获取客户列表失败',
+								duration: 2000,
+								icon: 'none'
+							});
+						}
+					}
+				})
+			},
 			search(e) {
 				console.log(e.value)
+				this.getList()
 			},
 			goEdit(id){
 				uni.navigateTo({

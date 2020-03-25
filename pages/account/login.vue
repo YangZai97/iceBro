@@ -6,7 +6,7 @@
 					登录
 				</view>
 				<view>
-					<input type="number" v-model="login.phone" placeholder="请输入账号" class="input" />
+					<input v-model="login.userName" placeholder="请输入账号" class="input" />
 				</view>
 				<view>
 					<input v-model="login.password" placeholder="请输入登录密码" class="input" />
@@ -28,7 +28,7 @@
 		data() {
 			return {
 				login: {
-					phone: "",
+					userName: "",
 					password: ""
 				},
 
@@ -37,10 +37,27 @@
 		methods: {
 			defaultHandlerLogin() {
 				console.log(this.login);
-				uni.switchTab({
-					url:'../tabBar/userCenter'
+				uni.request({
+					url:this.$utils.apiurl+'/api/login',
+					method:'POST',
+					data:this.login,
+					success :(res)=> {
+						if(!res.data.success){
+							uni.showToast({
+								title: '账号密码错误或已被冻结',
+								duration: 2000,
+								icon: 'none'
+							});
+						}else{
+							uni.setStorageSync('token', 'Bearer ' + res.data.data);
+							uni.switchTab({
+								url:'../tabBar/userCenter'
+							})
+						}
+					}
 				})
 			},
+		
 		}
 	}
 </script>

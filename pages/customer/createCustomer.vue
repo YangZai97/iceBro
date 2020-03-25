@@ -11,11 +11,11 @@
 		<view class="eidt-details-first">
 			<input v-model="ShopName" placeholder="店名" />
 		</view>
-		<view class="eidt-details-first">
+		<!-- <view class="eidt-details-first">
 			<input v-model="ProvinceCity" placeholder="省市区" />
-		</view>
+		</view> -->
 		<view class="eidt-details-first">
-			<input v-model="address" placeholder="详细地址(精确到门牌号)" />
+			<input v-model="address" placeholder="详细地址" />
 		</view>
 		<view class="eidt-details-first">
 			<view style=" margin-right: 5px; display:flex; align-items: center;" >
@@ -44,22 +44,58 @@
 				information: '',
 				ShopName: '',
 				ProvinceCity: '',
+				token:null,
 				address: '',
 				array: ['中国', '美国', '巴西', '日本'],
 				index: 0,
-				
-				
 			}
 		},
+		onShow() {
+		},
 		methods: {
+			// /api/user/client
 			bindPickerChange(e) {
 				console.log('picker发送选择改变，携带值为', e.target.value)
 				this.index = e.target.value
 			},
 			go(){
-				uni.switchTab({
-					url:'../tabBar/customer'
-				})
+				console.log(this.index)
+				if(this.input&&this.information&&this.ShopName&&this.address){
+					let data = {
+						name:this.input,
+						phone:this.information,
+						shop:this.ShopName,
+						address:this.address,
+						store:this.array[this.index]
+					}
+					uni.request({
+						url:this.$utils.apiurl+'/api/user/client',
+						method:'post',
+						data:data,
+						header: {
+						'Authorization': uni.getStorageSync('token')
+						},
+						success :(res)=> {
+							if(res.data.success){
+								uni.switchTab({
+									url:'../tabBar/customer'
+								})
+							}else{
+								uni.showToast({
+									title: '客户手机号已重复',
+									duration: 2000,
+									icon: 'none'
+								});
+							}
+						}
+					})
+				}else{
+					uni.showToast({
+						title: '信息资料不完整',
+						duration: 2000,
+						icon: 'none'
+					});
+				}
 			}
 		},
 		components: {

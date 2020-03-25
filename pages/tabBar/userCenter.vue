@@ -33,9 +33,15 @@
 	export default {
 		data() {
 			return {
-				card: '喻A366D4',
-				phone: '13699999999',
+				card: '',
+				phone: '',
+				token:null,
+				
 			}
+		},
+		onShow() {
+			this.token = uni.getStorageSync('token');
+			this.getUserInfo()
 		},
 		methods: {
 			go() {
@@ -49,8 +55,27 @@
 				})
 			},
 			logout() {
+				uni.removeStorageSync('token')
 				uni.navigateTo({
 					url: '../account/login'
+				})
+			},
+			getUserInfo(){
+				uni.request({
+					url:this.$utils.apiurl+'/api/user/profile',
+					method:'GET',
+					header: {
+					'Authorization' : this.token
+				},
+					success :(res)=> {
+						if(res.data.success){
+							this.card = res.data.data.CarNumber
+							this.phone = res.data.data.UserName
+							console.log(res.data);
+						}else{
+							this.logout()
+						}
+					}
 				})
 			},
 		},

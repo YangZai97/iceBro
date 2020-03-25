@@ -11,15 +11,15 @@
 		<view class="eidt-details-first">
 			<input v-model="ShopName" placeholder="店名" />
 		</view>
-		<view class="eidt-details-first">
+		<!-- <view class="eidt-details-first">
 			<input v-model="ProvinceCity" placeholder="省市区" />
-		</view>
+		</view> -->
 		<view class="eidt-details-first">
 			<input v-model="address" placeholder="详细地址(精确到门牌号)" />
 		</view>
 		<view class="eidt-details-first">
 			<view style=" margin-right: 5px; display:flex; align-items: center;" >
-				<text style="font-size: 12px; color:#777777;">选择发货冻库：</text>
+				<text style="font-size: 12px; color:#777777;">发货冻库：</text>
 			</view>
 			<view>
 				<view class="uni-list-cell-db">
@@ -45,18 +45,80 @@
 				ShopName: '',
 				ProvinceCity: '',
 				address: '',
-				array: ['中国', '美国', '巴西', '日本'],
+				array: ['美国', '中国', '巴西', '日本'],
 				index: 0,
+				Store:'',
+				userId:null,
+				
 			}
 		},
+		onLoad(Option){
+			this.userId = Option.id
+		},
+		onShow() {
+			this.getCustomerInfo()
+		},
 		methods: {
+			getCustomerInfo(){
+				uni.request({
+					url:this.$utils.apiurl+'/api/user/client/'+this.userId,
+					method:'GET',
+					header: {
+					'Authorization': uni.getStorageSync('token')
+					},
+					success :(res)=> {
+						if(res.data.success){
+							this.input = res.data.data.Name
+							this.information = res.data.data.Phone,
+							this.ShopName = res.data.data.Shop,
+							this.address = res.data.data.Address
+							this.Store = res.data.data.Store
+							 this.array.find((i,index)=>{
+								if(i==this.Store){
+									this.index = index
+								}
+							})
+						}else{
+							uni.showToast({
+								title: '系统出错',
+								duration: 2000,
+								icon: 'none'
+							});
+						}
+					}
+				})
+			},
 			bindPickerChange(e) {
 				console.log('picker发送选择改变，携带值为', e.target.value)
 				this.index = e.target.value
 			},
 			go(){
-				uni.switchTab({
-					url:'../tabBar/customer'
+				uni.request({
+					url:this.$utils.apiurl+'/api/user/client/'+this.userId,
+					method:'PUT',
+					data:{
+						name:this.input,
+						phone:this.information,
+						shop:this.ShopName,
+						address:this.address,
+						store:this.array[this.index]
+					},
+					header: {
+					'Authorization': uni.getStorageSync('token')
+					},
+					success :(res)=> {
+						if(res.data.success){
+							uni.switchTab({
+								url:'../tabBar/customer'
+							})
+						}else{
+							uni.showToast({
+								title: '系统出错',
+								duration: 2000,
+								icon: 'none'
+							});
+						}
+					}
 				})
 			}
 		},

@@ -64,14 +64,78 @@
 				home:'胖子烧烤',
 				address:'湖北省三门路254号',
 				Pvalue:0,
-				Jvalue:0
+				Jvalue:0,
+				userId:''
+				
 			}
 		},
+		onLoad(Option) {
+		   this.userId = Option.id 
+		},
+		onShow() {
+			this.getCustomerInfo()
+		},
 		methods: {
-			submit(){
-				uni.switchTab({
-					url:'../tabBar/orderHistory'
+			getCustomerInfo(){
+				uni.request({
+					url:this.$utils.apiurl+'/api/user/client/'+this.userId,
+					method:'GET',
+					header: {
+					'Authorization': uni.getStorageSync('token')
+					},
+					success :(res)=> {
+						if(res.data.success){
+							this.username = res.data.data.Name
+							this.phone = res.data.data.Phone,
+							this.home = res.data.data.Shop,
+							this.address = res.data.data.Address
+							this.addr = res.data.data.Store
+						}else{
+							uni.showToast({
+								title: '系统出错',
+								duration: 2000,
+								icon: 'none'
+							});
+						}
+					}
 				})
+			},
+			submit(){
+				if(this.Pvalue!=0&&this.Jvalue!=0){
+					uni.request({
+						url:this.$utils.apiurl+'/api/user/order',
+						method:'POST',
+						data:{
+							clientID:Number(this.userId),
+							remark:this.remark,
+							many:Number(this.Jvalue),
+							batch:Number(this.Pvalue)
+						},
+						header: {
+						'Authorization': uni.getStorageSync('token')
+						},
+						success :(res)=> {
+							if(res.data.success){
+								uni.switchTab({
+									url:'../tabBar/orderHistory'
+								})
+							}else{
+								uni.showToast({
+									title: '系统出错',
+									duration: 2000,
+									icon: 'none'
+								});
+							}
+						}
+					})
+				}else{
+					uni.showToast({
+						title: '票数和件数不能为0',
+						duration: 2000,
+						icon: 'none'
+					});
+				}
+				
 			}
 		},
 		components: {
