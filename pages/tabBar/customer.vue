@@ -18,22 +18,22 @@
 				</view>
 				<view>
 					<view>
-						<uni-icons  style="color: #9c9c9c;" type="home" size="13" class="ma-right"></uni-icons><text class="ma-right">{{item.Shop}}</text>
+						<uni-icons  style="color: #9c9c9c;" type="home" size="16" class="ma-right"></uni-icons><text class="ma-right">{{item.Shop}}</text>
 					</view>
 					<view>
-						<uni-icons  style="color: #9c9c9c;" type="location" size="13" class="ma-right"></uni-icons><text>{{item.Address}}</text>
+						<uni-icons  style="color: #9c9c9c;" type="location" size="16" class="ma-right"></uni-icons><text>{{item.Address}}</text>
 					</view>
 					<view>
-						<uni-icons  style="color: #9c9c9c;" type="location-filled" size="13" class="ma-right"></uni-icons><text>{{item.Store}}</text>
+						<uni-icons  style="color: #9c9c9c;" type="location-filled" size="16" class="ma-right"></uni-icons><text>{{item.Store}}</text>
 					</view>
 				</view>
 				<view class="footer">
 					<view class="footer-right">
 						<view @click="goEdit(item.ID)">
-							<uni-icons type="compose" size="11" class="ma-right"></uni-icons><text style="font-size: 20px;">编辑</text>
+							<uni-icons type="compose" size="15" class="ma-right"></uni-icons><text style="font-size: 16px;">编辑</text>
 						</view>
 						<view @click="deleteCustomer(item.ID)">
-							<uni-icons type="trash" size="11" class="ma-right"></uni-icons><text style="font-size: 20px;">删除</text>
+							<uni-icons type="trash" size="15" class="ma-right"></uni-icons><text style="font-size: 16px;">删除</text>
 						</view>
 					</view>
 				</view>

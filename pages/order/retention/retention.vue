@@ -15,13 +15,13 @@
 				</view>
 				<view @click="goDeatalis(item.ID)">
 					<view>
-						<uni-icons type="person-filled" style="color: #9c9c9c;" size="13" class="ma-right"></uni-icons><text class="ma-right">{{item.ClientName}}</text><text>{{item.PhoneNumber}}</text>
+						<uni-icons type="person-filled" style="color: #9c9c9c;" size="16" class="ma-right"></uni-icons><text class="ma-right">{{item.ClientName}}</text><text>{{item.PhoneNumber}}</text>
 					</view>
 					<view>
-						<uni-icons type="home" size="13" style="color: #9c9c9c;" class="ma-right"></uni-icons><text>{{item.Shop}}</text>
+						<uni-icons type="home" size="16" style="color: #9c9c9c;" class="ma-right"></uni-icons><text>{{item.Shop}}</text>
 					</view>
 					<view>
-						<uni-icons type="location-filled" style="color: #9c9c9c;" size="13" class="ma-right"></uni-icons><text>{{item.Address}}</text>
+						<uni-icons type="location-filled" style="color: #9c9c9c;" size="16" class="ma-right"></uni-icons><text>{{item.Address}}</text>
 					</view>
 				</view>
 				<view class="footer">
@@ -30,7 +30,7 @@
 					</view>
 					<view class="footer-right">
 						<view @click="deleteOrder(item.ID)">
-							<uni-icons type="trash" size="11" class="ma-right"></uni-icons><text style="font-size: 20px;">删除</text>
+							<uni-icons type="trash" size="15" class="ma-right"></uni-icons><text style="font-size: 16px;">删除</text>
 						</view>
 					</view>
 				</view>

@@ -33,10 +33,10 @@
 							</view>
 							<view class="footer-right">
 								<view @click="retention(item.ID)">
-									<uni-icons type="redo" size="11" class="ma-right"></uni-icons><text style="font-size: 20px;">滞留</text>
+									<uni-icons type="redo" size="15" class="ma-right"></uni-icons><text style="font-size: 16px;">滞留</text>
 								</view>
 								<view @click="deleteOrder(item.ID)">
-									<uni-icons type="trash" size="11" class="ma-right"></uni-icons><text style="font-size: 20px;">删除</text>
+									<uni-icons type="trash" size="15" class="ma-right"></uni-icons><text style="font-size: 16px;">删除</text>
 								</view>
 							</view>
 						</view>
@@ -71,7 +71,7 @@
 							</view>
 							<view class="footer-right">
 								<view @click="deleteOrder(item.ID)">
-									<uni-icons type="trash" size="11" class="ma-right"></uni-icons><text style="font-size: 20px;">删除</text>
+									<uni-icons type="trash" size="15" class="ma-right"></uni-icons><text style="font-size: 16px;">删除</text>
 								</view>
 							</view>
 						</view>
