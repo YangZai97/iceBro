@@ -39,7 +39,7 @@
 			<view class=" edit-footer">
 				<text style="margin-left: 10px;">备注：</text>
 				<view>
-					<textarea style="text-indent: 15px; width: 95%; padding: 10px;" :value="remark" placeholder="请输入备注" />
+					<textarea style="text-indent: 15px; width: 95%; padding: 10px;" v-model="remark" placeholder="请输入备注" />
 					</view>
 			</view>
 			
@@ -57,12 +57,12 @@
 	export default {
 		data() {
 			return {
-				addr:'东北冻库',
-				username:'刘佳佳',
-				phone:'13213132321',
-				remark:'e2123312312312312123dasdsaadsdas',
-				home:'胖子烧烤',
-				address:'湖北省三门路254号',
+				addr:'',
+				username:'',
+				phone:'',
+				remark:'',
+				home:'',
+				address:'',
 				Pvalue:0,
 				Jvalue:0,
 				userId:''
@@ -90,6 +90,7 @@
 							this.home = res.data.data.Shop,
 							this.address = res.data.data.Address
 							this.addr = res.data.data.Store
+						
 						}else{
 							uni.showToast({
 								title: '系统出错',

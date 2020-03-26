@@ -2,54 +2,72 @@
 	<view>
 		<view class="order-details">
 			<view class="order-details-top">
-				<text class="font-color-gray">订单号:128927489</text>
+				<text class="font-color-gray">订单号:{{orderId}}</text>
 			</view>
 			<view class="order-details-top">
-				<text class="font-color-gray">车牌号:229868878</text>
+				<text class="font-color-gray">车牌号:{{CarNumber}}</text>
 			</view>
-			<view class="order-details-footer" style="margin-top: 5px;">
-				<uni-icons class="order-icons" type="checkbox" size="22"></uni-icons>
-				<text class="font-color">东边库存</text>
-
-			</view>
+			
 			<view class="order-details-footer">
-
-				<uni-icons class="order-icons" type="checkbox-filled" size="22"></uni-icons>
-
+			
+				<uni-icons class="order-icons" style="color: #9c9c9c;" type="contact" size="18"></uni-icons>
+			
 				<view class="order-details-footer-right">
-					<text class="font-color">刘佳佳 123132156465 胖子烧烤</text>
-						<text class="font-color-gray" style="display: block;">地址：乱七八糟的地址1232131</text>
+					<text class="font-color-gray">{{ClientName}} {{PhoneNumber}} </text>
+					
 				</view>
 			</view>
+			
+			<view class="order-details-footer">
+			
+				<uni-icons class="order-icons" style="color: #9c9c9c;" type="shop" size="18"></uni-icons>
+			
+				<view class="order-details-footer-right">
+			<text class="font-color-gray" style="display: block;">店铺：{{Shop}}</text>					
+				</view>
+			</view>
+			<view class="order-details-footer">
+			
+				<uni-icons class="order-icons" style="color: #9c9c9c;" type="location" size="18"></uni-icons>
+			
+				<view class="order-details-footer-right">
+			<text class="font-color-gray" style="display: block;">地址：{{Address}}</text>					
+				</view>
+			</view>
+			<view class="order-details-footer" style="margin-top: 5px;">
+				<uni-icons class="order-icons" type="map-pin-ellipse" style="color: #9c9c9c;" size="18"></uni-icons>
+				<text class="font-color-gray">{{store}}</text>
+			
+			</view>
 		</view>
 		<view class="order-details">
 			<view class="order-details-font">
-				<text class="font-color">票数: 12票</text>
+				<text class="font-color-gray">票数: {{Batch}}票</text>
 			</view>
 			<view class="order-details-font">
-				<text class="font-color">件数: 12件</text>
+				<text class="font-color-gray">件数: {{Many}}件</text>
 			</view>
 		</view>
 		<view class="order-details">
 			<view class="order-details-font">
-				<text class="font-color">备注:</text>
+				<text class="font-color-gray">备注:</text>
 			</view>
-			<view class="order-details-font">
-				<text class="font-color-gray">技术开发快捷u你难道v额积极暗示搜集微软是就让我如i世界人均哦i技术的覅i人家覅发技术开发快捷u你难道v额积极暗示搜集微软是就让我如i世界人均哦i技术的覅i人家覅发技术开发快捷u你难道v额积极暗示搜集微软是就让我如i世界人均哦i技术的覅i人家覅发</text>
+			<view class="order-details-font" style="text-indent:10px;">
+				<text class="font-color-gray" >{{remark}}</text>
 			</view>
 		</view>
 		<view class="order-details">
 			<view class="order-details-footer" style="margin-bottom: 5px;">
-				<view>
-					<uni-icons type="checkbox" class="order-icons" size="22" style="color: #9c9c9c;"></uni-icons>
+				<view style="display: flex;">
+					<uni-icons type="redo-filled" class="order-icons" size="22" style="color: #9c9c9c;"></uni-icons>
 				</view>
 				<view>
-					<text class="font-color-gray">2020-02-23 13:12</text>
+					<text class="font-color-gray">创建时间：{{CreatedAt}}</text>
 				</view>
 			</view>
-			<view class="order-details-footer">
+			<view class="order-details-footer" v-if="Status=='已完成'">
 				<uni-icons type="checkbox-filled" class="order-icons" size="22" style="color: #9c9c9c;"></uni-icons>
-				<text class="font-color-gray">2020-02-23 13:12</text>
+				<text class="font-color-gray">完成时间：{{UpdatedAt}}</text>
 			</view>
 		</view>
 	</view>
@@ -60,14 +78,60 @@
 	export default {
 		data() {
 			return {
-
+				orderId:'',
+				store:'',
+				Shop:'',
+				ClientName:'',
+				Many:'',
+				Batch:'',
+				CarNumber:'',
+				Status:'',
+				Address:'',
+				PhoneNumber:'',
+				remark:'',
+				CreatedAt:'',
+				UpdatedAt:''
 			}
 		},
 		methods: {
-
+			getDeatalis(){
+					uni.request({
+						url:this.$utils.apiurl+'/api/user/order/'+this.orderId,
+						method:'GET',
+						header: {
+						'Authorization': uni.getStorageSync('token')
+						},
+						success :(res)=> {
+							if(res.data.success){
+								console.log(res.data)
+								this.store = res.data.data.Store
+								this.ClientName = res.data.data.ClientName
+								this.PhoneNumber = res.data.data.PhoneNumber
+								this.CarNumber = res.data.data.Staff.CarNumber
+								this.Shop = res.data.data.Shop
+								this.Address = res.data.data.Address
+								this.Status = res.data.data.Status
+								this.Many = res.data.data.Many
+								this.Batch = res.data.data.Batch
+								this.remark= res.data.data.Remark
+								this.UpdatedAt = res.data.data.UpdatedAt
+								this.CreatedAt = res.data.data.CreatedAt
+							}else{
+								uni.showToast({
+									title: '系统出错,获取订单详情失败',
+									duration: 2000,
+									icon: 'none'
+								});
+							}
+						}
+					})
+			}
+		},
+		onShow(){
+			this.getDeatalis()
 		},
 		onLoad(Option){
-			console.log(Option.id)
+			this.orderId = Option.id
 		},
 		components: {
 			uniIcons

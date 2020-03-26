@@ -18,13 +18,13 @@
 				</view>
 				<view>
 					<view>
-						<uni-icons type="home" size="13" class="ma-right"></uni-icons><text class="ma-right">{{item.Shop}}</text>
+						<uni-icons  style="color: #9c9c9c;" type="home" size="13" class="ma-right"></uni-icons><text class="ma-right">{{item.Shop}}</text>
 					</view>
 					<view>
-						<uni-icons type="location" size="13" class="ma-right"></uni-icons><text>{{item.Address}}</text>
+						<uni-icons  style="color: #9c9c9c;" type="location" size="13" class="ma-right"></uni-icons><text>{{item.Address}}</text>
 					</view>
 					<view>
-						<uni-icons type="location-filled" size="13" class="ma-right"></uni-icons><text>{{item.Store}}</text>
+						<uni-icons  style="color: #9c9c9c;" type="location-filled" size="13" class="ma-right"></uni-icons><text>{{item.Store}}</text>
 					</view>
 				</view>
 				<view class="footer">
@@ -39,9 +39,6 @@
 				</view>
 			</view>
 			
-		</view>
-		<view class="deleteBtn" >
-			<button type="primary" @click="goCreate()">新增客户</button>
 		</view>
 		<view class="footer-button">
 			<view >
@@ -188,7 +185,7 @@
 
 	text {
 		font-size: 12px;
-		color: #333333;
+		color: #666666;
 	}
 
 	.number-text {

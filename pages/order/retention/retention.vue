@@ -7,29 +7,29 @@
 			<view class="list">
 				<view class="list-top">
 					<view>
-						<text class="number-text">{{item.number}}件</text>
+						<text class="number-text">{{item.Many}}件</text>
 					</view>
 					<view>
-						<button type="primary" size="mini" @click="send()">确认派送</button>
+						<button type="primary" size="mini" @click="send(item.ID)">确认派送</button>
 					</view>
 				</view>
-				<view @click="goDeatalis(item.number)">
+				<view @click="goDeatalis(item.ID)">
 					<view>
-						<uni-icons type="person-filled" size="13" class="ma-right"></uni-icons><text class="ma-right">{{item.username}}</text><text>{{item.phone}}</text>
+						<uni-icons type="person-filled" style="color: #9c9c9c;" size="13" class="ma-right"></uni-icons><text class="ma-right">{{item.ClientName}}</text><text>{{item.PhoneNumber}}</text>
 					</view>
 					<view>
-						<uni-icons type="home" size="13" class="ma-right"></uni-icons><text>{{item.home}}</text>
+						<uni-icons type="home" size="13" style="color: #9c9c9c;" class="ma-right"></uni-icons><text>{{item.Shop}}</text>
 					</view>
 					<view>
-						<uni-icons type="location-filled" size="13" class="ma-right"></uni-icons><text>{{item.addres}}</text>
+						<uni-icons type="location-filled" style="color: #9c9c9c;" size="13" class="ma-right"></uni-icons><text>{{item.Address}}</text>
 					</view>
 				</view>
 				<view class="footer">
 					<view class="footer-left">
-						<text class="footer-text">订单号: {{item.order}}</text>
+						<text class="footer-text">订单号: {{item.ID}}</text>
 					</view>
 					<view class="footer-right">
-						<view>
+						<view @click="deleteOrder(item.ID)">
 							<uni-icons type="trash" size="11" class="ma-right"></uni-icons><text>删除</text>
 						</view>
 					</view>
@@ -58,69 +58,82 @@
 						home: '刘佳佳烧烤',
 						order: 10001
 					},
-					{
-						number: 1,
-						username: '刘佳佳',
-						phone: '136448798711',
-						addres: '河南省三门市义务晨业路33号',
-						home: '刘佳佳烧烤',
-						order: 10001
-					},
-					{
-						number: 4,
-						username: '刘佳佳',
-						phone: '136448798711',
-						addres: '河南省三门市义务晨业路33号',
-						home: '刘佳佳烧烤',
-						order: 10001
-					},
-					{
-						number: 20,
-						username: '刘佳佳',
-						phone: '136448798711',
-						addres: '河南省三门市义务晨业路33号',
-						home: '刘佳佳烧烤',
-						order: 10001
-					},
-					{
-						number: 52,
-						username: '刘佳佳',
-						phone: '136448798711',
-						addres: '河南省三门市义务晨业路33号',
-						home: '刘佳佳烧烤',
-						order: 10001
-					},
-					{
-						number: 6,
-						username: '刘佳佳',
-						phone: '136448798711',
-						addres: '河南省三门市义务晨业路33号',
-						home: '刘佳佳烧烤',
-						order: 10001
-					},
-					{
-						number: 1,
-						username: '刘佳佳',
-						phone: '136448798711',
-						addres: '河南省三门市义务晨业路33号',
-						home: '刘佳佳烧烤',
-						order: 10001
-					},
-					{
-						number: 12,
-						username: '刘佳佳',
-						phone: '136448798711',
-						addres: '河南省三门市义务晨业路33号',
-						home: '刘佳佳烧烤',
-						order: 10001
-					}
+					
+				
 				
 				]
 			}
 		},
+		onShow() {
+		this.getList()	
+		},
 		methods: {
 			search(e) {
 				console.log(e.value)
+				this.getList()
+			},
+			deleteOrder(id){
+				uni.request({
+					url:this.$utils.apiurl+'/api/user/order/'+id,
+					method:'delete',
+					header: {
+					'Authorization': uni.getStorageSync('token')
+					},
+					success :(res)=> {
+						if(res.data.success){
+							uni.showToast({
+								title: '删除成功',
+								duration: 2000,
+								icon: 'none'
+							});
+							this.getList()
+						}else{
+							uni.showToast({
+								title: '系统出错,获取订单列表失败',
+								duration: 2000,
+								icon: 'none'
+							});
+						}
+					}
+				})
+			},
+			
+			getList(){
+				let data={}
+				if(this.searchValue.value){
+					data = {
+						page:1,
+						page_size:999999,
+						status:'滞留中',
+						search:this.searchValue.value
+					}
+				}else{
+					data={
+						page:1,
+						status:'滞留中',
+						page_size:999999
+					}
+				}
+				uni.request({
+					url:this.$utils.apiurl+'/api/user/order',
+					method:'get',
+					data:data,
+					header: {
+					'Authorization': uni.getStorageSync('token')
+					},
+					success :(res)=> {
+						if(res.data.success){
+							console.log(res.data)
+							this.list = res.data.data
+						}else{
+							uni.showToast({
+								title: '系统出错,获取订单列表失败',
+								duration: 2000,
+								icon: 'none'
+							});
+						}
+					}
+				})
 			},
 			goDeatalis(id) {
 				console.log(id)
@@ -128,15 +141,36 @@
 					url: '../orderDetalis/orderDetalis?id=' + id
 				})
 			},
-			send(){
-				try {
-				    uni.setStorageSync('current', true);
-				} catch (e) {
-				    // error
-				}
-				uni.switchTab({
-					url:'../../tabBar/orderHistory'
+			send(id){
+				uni.request({
+					url:this.$utils.apiurl+'/api/user/order/'+id,
+					method:'put',
+					data:{
+						status:'已完成'
+					},
+					header: {
+					'Authorization': uni.getStorageSync('token')
+					},
+					success :(res)=> {
+						if(res.data.success){
+							try {
+							    uni.setStorageSync('current', true);
+							} catch (e) {
+							    // error
+							}
+							uni.switchTab({
+								url:'../../tabBar/orderHistory'
+							})
+						}else{
+							uni.showToast({
+								title: '系统出错',
+								duration: 2000,
+								icon: 'none'
+							});
+						}
+					}
 				})
+			
 				
 			}
 		}
@@ -179,7 +213,7 @@ page {
 
 	text {
 		font-size: 12px;
-		color: #333333;
+		color: #666666;
 	}
 
 	.number-text {
