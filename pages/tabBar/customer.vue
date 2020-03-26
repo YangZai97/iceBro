@@ -30,10 +30,10 @@
 				<view class="footer">
 					<view class="footer-right">
 						<view @click="goEdit(item.ID)">
-							<uni-icons type="compose" size="11" class="ma-right"></uni-icons><text>编辑</text>
+							<uni-icons type="compose" size="11" class="ma-right"></uni-icons><text style="font-size: 20px;">编辑</text>
 						</view>
 						<view @click="deleteCustomer(item.ID)">
-							<uni-icons type="trash" size="11" class="ma-right"></uni-icons><text>删除</text>
+							<uni-icons type="trash" size="11" class="ma-right"></uni-icons><text style="font-size: 20px;">删除</text>
 						</view>
 					</view>
 				</view>
@@ -184,7 +184,7 @@
 	}
 
 	text {
-		font-size: 12px;
+		font-size: 16px;
 		color: #666666;
 	}
 
@@ -208,7 +208,7 @@
 
 	.footer-right text {
 		color: #666666;
-		font-size: 10px;
+		font-size: 16px;
 	}
 
 	.footer-right {

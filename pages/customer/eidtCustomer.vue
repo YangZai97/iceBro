@@ -19,12 +19,12 @@
 		</view>
 		<view class="eidt-details-first">
 			<view style=" margin-right: 5px; display:flex; align-items: center;" >
-				<text style="font-size: 12px; color:#777777;">发货冻库：</text>
+				<text style="font-size: 18px; color:#777777;">发货冻库：</text>
 			</view>
 			<view>
 				<view class="uni-list-cell-db">
 					<picker @change="bindPickerChange" :value="index" :range="array">
-						<view class="uni-input" style="font-size: 12px; color:#007AFF;">{{array[index]}}</view>
+						<view class="uni-input" style="font-size: 18px; color:#007AFF;">{{array[index]}}</view>
 					</picker>
 				</view>
 			</view>
@@ -151,8 +151,9 @@
 		border-bottom: 1px solid #eef2f8;
 	}
 	input{
-		font-size: 15px;
+		font-size: 18px;
 		color: #3B4144;
+		width: 1000px;
 	}
 	.eidt-details-right {
 		/* border-left: 1px solid #969ba1; */

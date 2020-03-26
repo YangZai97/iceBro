@@ -171,7 +171,7 @@
 	}
 
 	.font-color-gray {
-		font-size: 12px;
+		font-size: 15px;
 		color: #9c9c9c;
 	}
 

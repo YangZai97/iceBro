@@ -33,10 +33,10 @@
 							</view>
 							<view class="footer-right">
 								<view @click="retention(item.ID)">
-									<uni-icons type="redo" size="11" class="ma-right"></uni-icons><text>滞留</text>
+									<uni-icons type="redo" size="11" class="ma-right"></uni-icons><text style="font-size: 20px;">滞留</text>
 								</view>
 								<view @click="deleteOrder(item.ID)">
-									<uni-icons type="trash" size="11" class="ma-right"></uni-icons><text>删除</text>
+									<uni-icons type="trash" size="11" class="ma-right"></uni-icons><text style="font-size: 20px;">删除</text>
 								</view>
 							</view>
 						</view>
@@ -71,7 +71,7 @@
 							</view>
 							<view class="footer-right">
 								<view @click="deleteOrder(item.ID)">
-									<uni-icons type="trash" size="11" class="ma-right"></uni-icons><text>删除</text>
+									<uni-icons type="trash" size="11" class="ma-right"></uni-icons><text style="font-size: 20px;">删除</text>
 								</view>
 							</view>
 						</view>
@@ -292,13 +292,13 @@
 	}
 
 	text {
-		font-size: 12px;
+		font-size: 15px;
 		color: #666666;
 	}
 
 	.number-text {
 		color: #5D61FC;
-		font-size: 16px;
+		font-size: 17px;
 
 	}
 
@@ -316,7 +316,7 @@
 
 	.footer-right text {
 		color: #666666;
-		font-size: 10px;
+		font-size: 14px;
 	}
 
 	.footer-right {

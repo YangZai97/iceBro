@@ -3,7 +3,7 @@
 		<view class="t2" style="text-align: center;">
 			<image src="../../static/haihuidai/asset.png" style="width: 80px; height: 80px;"></image>
 			<view>
-				<text style="color: #FA963C;font-size: 16px; font-weight: 400;">{{phone}}</text>
+				<text style="color: #FA963C;font-size: 20px; font-weight: 600;">{{phone}}</text>
 			</view>
 		</view>
 		<view class="t2">
@@ -113,7 +113,7 @@
 		background-image:url('~@/static/haihuidai/usercenterBg.png') ;
 		background-repeat:no-repeat;
 		background-size:100%;
-		padding: 20px 0;
+		padding: 90px 0;
 	}
 
 

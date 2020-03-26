@@ -1,5 +1,5 @@
 {
-	"name" : "iceBro",
+	"name" : "冻友",
 	"appid" : "__UNI__120561F",
 	"description" : "",
 	"versionName" : "1.0.0",
@@ -57,6 +57,13 @@
 			"sdkConfigs" : 
 			{
 				"ad" : null
+			},
+			"icons" : 
+			{
+				"android" : 
+				{
+					"hdpi" : ""
+				}
 			}
 		}
 	},

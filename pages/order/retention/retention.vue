@@ -30,7 +30,7 @@
 					</view>
 					<view class="footer-right">
 						<view @click="deleteOrder(item.ID)">
-							<uni-icons type="trash" size="11" class="ma-right"></uni-icons><text>删除</text>
+							<uni-icons type="trash" size="11" class="ma-right"></uni-icons><text style="font-size: 20px;">删除</text>
 						</view>
 					</view>
 				</view>
@@ -212,13 +212,13 @@ page {
 	}
 
 	text {
-		font-size: 12px;
+		font-size: 16px;
 		color: #666666;
 	}
 
 	.number-text {
 		color: #5D61FC;
-		font-size: 16px;
+		font-size: 17px;
 
 	}
 
@@ -236,7 +236,7 @@ page {
 
 	.footer-right text {
 		color: #666666;
-		font-size: 10px;
+		font-size: 12px;
 	}
 
 	.footer-right {

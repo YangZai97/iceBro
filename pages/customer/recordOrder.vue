@@ -3,22 +3,22 @@
 		<view class="eidt-details">
 			<view class="eidt-details-first">
 				<view class="uni-input-boder">
-					<text style="font-size: 12px; padding-right: 5px; color:#777777;">{{username}}</text>
+					<text style="font-size: 16px; padding-right: 5px; color:#777777;">{{username}}</text>
 				</view>
 				<view class="eidt-details-right" style="padding-left: 6px;">
-					<text style="font-size: 12px; color:#777777;">{{phone}}</text>
+					<text style="font-size: 16px; color:#777777;">{{phone}}</text>
 				</view>
 			</view>
 			<view class="eidt-details-first">
-				<text style="font-size: 12px; color:#777777;">{{home}}</text>
+				<text style="font-size: 16px; color:#777777;">{{home}}</text>
 
 			</view>
 			<view class="eidt-details-first">
-				<text style="font-size: 12px; color:#777777;">{{address}}</text>
+				<text style="font-size: 16px; color:#777777;">{{address}}</text>
 			</view>
 			<view class="eidt-details-first">
 				<view style=" margin-right: 5px; display:flex; align-items: center;">
-					<text style="font-size: 12px; color:#777777;">发货冻库：{{addr}}</text>
+					<text style="font-size: 16px; color:#777777;">发货冻库：{{addr}}</text>
 				</view>
 			</view>
 
@@ -39,7 +39,7 @@
 			<view class=" edit-footer">
 				<text style="margin-left: 10px;">备注：</text>
 				<view>
-					<textarea style="text-indent: 15px; width: 95%; padding: 10px;" v-model="remark" placeholder="请输入备注" />
+					<textarea style=" width: 95%; padding: 10px;" v-model="remark" placeholder="请输入备注" />
 					</view>
 			</view>
 			
@@ -169,13 +169,13 @@
 		border-bottom: 1px solid #eef2f8;
 	}
 	input{
-		font-size: 15px;
+		font-size: 18px;
 		color: #3B4144;
 	}
 	.eidt-details-right {
 		/* border-left: 1px solid #969ba1; */
 	}
 	.edit-footer text{
-		font-size: 14px; color:#777777;
+		font-size: 18px; color:#777777;
 	}
 </style>
