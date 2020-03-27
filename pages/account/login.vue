@@ -9,7 +9,7 @@
 					<input v-model="login.userName" placeholder="请输入账号" class="input" />
 				</view>
 				<view>
-					<input v-model="login.password" placeholder="请输入登录密码" class="input" />
+					<input v-model="login.password" type="password" placeholder="请输入登录密码" class="input" />
 				</view>
 
 				<view class=" loginbtn ">
