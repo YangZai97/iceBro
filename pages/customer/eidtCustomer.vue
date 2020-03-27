@@ -45,7 +45,7 @@
 				ShopName: '',
 				ProvinceCity: '',
 				address: '',
-				array: ['美国', '中国', '巴西', '日本'],
+				array: ['民品福冻货批发市场', '陈家坝万吨冻品市场', '凯尔国际冻品市场', '其他批发市场'],
 				index: 0,
 				Store:'',
 				userId:null,
