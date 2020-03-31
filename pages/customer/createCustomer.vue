@@ -2,7 +2,7 @@
 	<view class="eidt-details">
 		<view class="eidt-details-first">
 			<view class="uni-input-boder">
-				<input v-model="input" placeholder="姓名" />
+				<input style="width: 150px;" v-model="input" placeholder="姓名" />
 			</view>
 			<view class="eidt-details-right" style="padding-left: 6px;">
 				<input v-model="information" placeholder="联系方式" />
@@ -59,7 +59,8 @@
 				this.index = e.target.value
 			},
 			go(){
-				console.log(this.index)
+				console.log(this.information)
+				
 				if(this.input&&this.information&&this.ShopName&&this.address){
 					let data = {
 						name:this.input,

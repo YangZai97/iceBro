@@ -69,11 +69,11 @@
 							<view class="footer-left">
 								<text class="footer-text">订单号: {{item.ID}}</text>
 							</view>
-							<view class="footer-right">
+							<!-- <view class="footer-right">
 								<view @click="deleteOrder(item.ID)">
 									<uni-icons type="trash" size="15" class="ma-right"></uni-icons><text style="font-size: 16px;">删除</text>
 								</view>
-							</view>
+							</view> -->
 						</view>
 					</view>
 				</view>

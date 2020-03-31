@@ -2,7 +2,7 @@
 	<view>
 		<view class="eidt-details">
 			<view class="eidt-details-first">
-				<view class="uni-input-boder">
+				<view class="uni-input-boder" style=" width: 150px;">
 					<text style="font-size: 16px; padding-right: 5px; color:#777777;">{{username}}</text>
 				</view>
 				<view class="eidt-details-right" style="padding-left: 6px;">

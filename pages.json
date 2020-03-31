@@ -1,13 +1,5 @@
 {
-	"pages": [{
-			"path": "pages/tabBar/userCenter",
-			"style": {
-				"navigationStyle": "custom",
-				"app-plus": {
-					"titleView": false
-				}
-			}
-		},
+	"pages": [
 		{
 			"path": "pages/account/login",
 			"style": {
@@ -16,7 +8,16 @@
 					"titleView": false
 				}
 			}
+		},{
+			"path": "pages/tabBar/userCenter",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleView": false
+				}
+			}
 		},
+		
 		{
 			"path": "pages/order/orderDetalis/orderDetalis",
 			"style": {
