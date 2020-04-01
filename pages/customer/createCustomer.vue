@@ -67,7 +67,8 @@
 						phone:this.information,
 						shop:this.ShopName,
 						address:this.address,
-						store:this.array[this.index]
+						store:this.array[this.index],
+						price:2
 					}
 					uni.request({
 						url:this.$utils.apiurl+'/api/user/client',
