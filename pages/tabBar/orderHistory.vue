@@ -13,7 +13,7 @@
 								<text class="number-text">{{item.Many}}件</text>
 							</view>
 							<view>
-								<button type="primary" size="mini" @click="send(item.ID)">确认派送</button>
+								<button type="primary" size="mini" @click="send(item.ID,item)">确认派送</button>
 							</view>
 						</view>
 						<view @click="goDeatalis(item.ID)">
@@ -32,7 +32,7 @@
 								<text class="footer-text">订单号: {{item.ID}}</text>
 							</view>
 							<view class="footer-right">
-								<view @click="retention(item.ID)">
+								<view @click="retention(item.ID,item)">
 									<uni-icons type="redo" size="15" class="ma-right"></uni-icons><text style="font-size: 16px;">滞留</text>
 								</view>
 								<view @click="deleteOrder(item.ID)">
@@ -197,12 +197,14 @@
 				console.log(e.value)
 				this.getList()
 			},
-			send(id) {
+			send(id,item) {
 				uni.request({
 					url:this.$utils.apiurl+'/api/user/order/'+id,
 					method:'put',
 					data:{
-						status:'已完成'
+						status:'已完成',
+						Many:item.Many,
+						Amount:item.Amount
 					},
 					header: {
 					'Authorization': uni.getStorageSync('token')
@@ -221,12 +223,14 @@
 					}
 				})
 			},
-			retention(id) {
+			retention(id,item) {
 				uni.request({
 					url:this.$utils.apiurl+'/api/user/order/'+id,
 					method:'put',
 					data:{
-						status:'滞留中'
+						status:'滞留中',
+						Many:item.Many,
+						Amount:item.Amount
 					},
 					header: {
 					'Authorization': uni.getStorageSync('token')

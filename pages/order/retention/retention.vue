@@ -10,7 +10,7 @@
 						<text class="number-text">{{item.Many}}件</text>
 					</view>
 					<view>
-						<button type="primary" size="mini" @click="send(item.ID)">确认派送</button>
+						<button type="primary" size="mini" @click="send(item.ID,item)">确认派送</button>
 					</view>
 				</view>
 				<view @click="goDeatalis(item.ID)">
@@ -50,18 +50,7 @@
 		data() {
 			return {
 				searchValue: '',
-				list: [{
-						number: 7,
-						username: '刘佳佳',
-						phone: '136448798711',
-						addres: '河南省三门市义务晨业路33号',
-						home: '刘佳佳烧烤',
-						order: 10001
-					},
-					
-				
-				
-				]
+				list: []
 			}
 		},
 		onShow() {
@@ -141,12 +130,14 @@
 					url: '../orderDetalis/orderDetalis?id=' + id
 				})
 			},
-			send(id){
+			send(id,item){
 				uni.request({
 					url:this.$utils.apiurl+'/api/user/order/'+id,
 					method:'put',
 					data:{
-						status:'已完成'
+						status:'已完成',
+						Many:item.Many,
+						Amount:item.Amount
 					},
 					header: {
 					'Authorization': uni.getStorageSync('token')

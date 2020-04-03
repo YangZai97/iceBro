@@ -27,12 +27,12 @@
 			<view class="eidt-details-first edit-footer">
 				<text>票数：
 				</text>
-				<uni-number-box v-model="Pvalue" :min="0" :max="99999"></uni-number-box>
+				<uni-number-box v-model="Pvalue" :min="1" :max="99999"></uni-number-box>
 			</view>
 			<view class="eidt-details-first edit-footer">
 				<text>件数：
 				</text>
-				<uni-number-box v-model="Jvalue" :min="0" :max="99999"></uni-number-box>
+				<uni-number-box v-model="Jvalue" :min="1" :max="99999"></uni-number-box>
 			</view>
 		</view>
 		<view class="eidt-details">
@@ -63,8 +63,8 @@
 				remark:'',
 				home:'',
 				address:'',
-				Pvalue:0,
-				Jvalue:0,
+				Pvalue:1,
+				Jvalue:1,
 				userId:''
 				
 			}
@@ -177,5 +177,21 @@
 	}
 	.edit-footer text{
 		font-size: 18px; color:#777777;
+	}
+	/deep/ .uni-numbox__minus{
+		width: 120px ;
+		height: 60px;
+		}
+	/deep/ .uni-numbox__plus{
+		width: 120px ;
+		height: 60px;
+	}
+	/deep/ .uni-numbox__value{
+		width: 120px ;
+		height: 60px;
+	}
+	.uni-numbox{
+		height: 60px;
+		width: 160px;
 	}
 </style>
